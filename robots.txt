@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /play-online-now/
+Disallow: /play-online-now
+
+Sitemap: https://betsala-casino.github.io/home/sitemap.xml

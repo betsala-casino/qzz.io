@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirección segura a BetSala</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<link rel="icon" type="image/webp" href="../assets/favicon.webp">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="redirect-page">
+  <div>
+    <div class="spinner"></div>
+    <h1>Abriendo <span style="color:var(--accent-soft)">BetSala</span></h1>
+    <p>Te enviaremos a la página de acceso para continuar con registro, casino o apuestas.</p>
+    <p>La redirección puede tardar unos segundos.</p>
+    <div class="manual">Si no avanzas automáticamente, <a id="manual-link" href="#" rel="nofollow noopener noreferrer sponsored">usa este enlace manual</a>.</div>
+  </div>
+</div>
+<script>
+(function () {
+  var REFERRAL_URL = 'https://www.betsala11.com/es/';
+  try {
+    var currentParams = new URLSearchParams(window.location.search);
+    var passThrough = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','sub','sub_id','clickid','gclid'];
+    var url = new URL(REFERRAL_URL);
+    passThrough.forEach(function (k) {
+      if (currentParams.has(k) && !url.searchParams.has(k)) url.searchParams.set(k, currentParams.get(k));
+    });
+    REFERRAL_URL = url.toString();
+  } catch (e) { }
+  document.getElementById('manual-link').setAttribute('href', REFERRAL_URL);
+  setTimeout(function () { window.location.replace(REFERRAL_URL); }, 1500);
+})();
+</script>
+</body>
+</html>
