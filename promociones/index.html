@@ -1,66 +1,2003 @@
 <!DOCTYPE html>
 <html lang="es-CL">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>BetSala Promociones Chile | Bonos, giros y free bets</title>
-<meta content="Guía renovada de BetSala promociones Chile con bonos de casino, giros gratis, free bets, cashback, códigos, requisitos y juego responsable." name="description"/>
-<meta content="betsala promociones, bonos betsala, giros gratis betsala, free bet betsala chile" name="keywords"/>
-<meta content="index, follow" name="robots"/>
-<link href="../assets/favicon.webp" rel="icon" type="image/webp"/>
-<link href="../css/style.css" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BetSala Promociones Chile — Bonos, Giros Gratis, Free Bet y Más</title>
+<meta name="description" content="Más de 25 promociones activas en BetSala Chile: bono de casino 150%, free bet deportiva, giros gratis, cashback semanal, torneos de slots y ofertas del Mundial 2026.">
+<meta name="keywords" content="betsala promociones, betsala bono, betsala bonus, bono betsala, betsala giros gratis, betsala apuesta gratis">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/webp" href="../assets/favicon.webp">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.promos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
+.bono-card{background:linear-gradient(180deg,var(--bg-2),var(--bg-3));border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:transform .2s,border-color .2s;display:flex;flex-direction:column;cursor:pointer}
+.bono-card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.bono-card-img{aspect-ratio:16/9;overflow:hidden;background:#000}
+.bono-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.bono-card:hover .bono-card-img img{transform:scale(1.04)}
+.bono-card-body{padding:20px;display:flex;flex-direction:column;flex-grow:1}
+.bono-card-body h3{font-size:16px;text-transform:uppercase;margin-bottom:8px;color:#fff;margin-top:0}
+.bono-card-body p{color:#c0c4dc;font-size:14px;margin-bottom:14px;flex-grow:1;line-height:1.6}
+.promo-code-small{font-size:12px;color:var(--gold);margin-bottom:10px!important;flex-grow:0!important}
+.card-btn{font-size:12px;padding:8px 16px;cursor:pointer;align-self:flex-start}
+@media(max-width:980px){.promos-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.promos-grid{grid-template-columns:1fr}}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:9999;align-items:center;justify-content:center;padding:20px;overflow-y:auto}
+.modal-overlay.active{display:flex}
+.modal-box{background:var(--bg-2);border:1px solid var(--border);border-radius:16px;width:100%;max-width:740px;max-height:90vh;overflow-y:auto;position:relative;margin:auto}
+.modal-close{position:sticky;top:12px;float:right;margin:12px 12px 0 0;background:rgba(255,255,255,.08);border:none;color:#fff;width:34px;height:34px;border-radius:50%;font-size:16px;cursor:pointer;z-index:10;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.modal-close:hover{background:var(--accent)}
+.modal-img{width:100%;aspect-ratio:16/6;overflow:hidden;border-radius:16px 16px 0 0}
+.modal-img img{width:100%;height:100%;object-fit:cover}
+.modal-body{padding:28px 28px 32px}
+.modal-body h2{font-size:22px;text-transform:uppercase;font-weight:900;margin:0 0 18px;color:#fff}
+.modal-content p{color:#c0c4dc;font-size:14px;line-height:1.75;margin-bottom:10px}
+.modal-content p strong{color:#fff}
+.modal-content ol,.modal-content ul{margin:8px 0 14px 20px;color:#c0c4dc;font-size:14px;line-height:1.7}
+.modal-content ul.sub-list{margin-left:30px;list-style:lower-alpha}
+.modal-content li{margin-bottom:4px}
+.modal-content a{color:var(--accent-soft);text-decoration:underline}
+.bonus-table{width:100%;border-collapse:collapse;margin:14px 0;background:var(--bg-3);border-radius:8px;overflow:hidden;font-size:13px}
+.bonus-table th,.bonus-table td{padding:8px 12px;border-bottom:1px solid var(--border);text-align:left}
+.bonus-table th{background:var(--bg-3);color:#fff;font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.4px}
+.bonus-table td{color:#c0c4dc}
+.bonus-table tr:last-child td{border-bottom:none}
+.modal-cta{display:inline-block;margin-top:20px;text-decoration:none}
+body.modal-open{overflow:hidden}
+</style>
 </head>
 <body>
 <header class="topbar">
-<div class="topbar-inner">
-<a class="logo" href="../"><img alt="BetSala Chile" height="80" src="../assets/logo.webp" width="360"/></a>
-<div class="top-actions">
-<span class="lang">🇨🇱 Chile · español</span>
-<a class="btn btn-ghost" href="../iniciar-sesion/">Ingresar</a>
-<a class="btn btn-primary" data-nosnippet="" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Abrir BetSala</a>
-</div>
-</div>
-<nav class="mainnav"><div class="mainnav-inner"><a class="" href="../casino/">🎰 Casino</a><a class="" href="../tragamonedas/">🎲 Tragamonedas</a><a class="" href="../casino-en-vivo/">♠ En vivo</a><a class="" href="../apuestas-deportivas/">⚽ Deportes</a><a class="" href="../aviator/">✈ Aviator</a><a class="active" href="../promociones/">🎁 Promos</a><a class="" href="../codigo-promocional/">🏷 Códigos</a><a class="" href="../app/">📱 App</a><a class="" href="../vip/">👑 VIP</a></div></nav>
+  <div class="topbar-inner">
+    <a class="logo" href="../"><img src="../assets/logo.webp" alt="BetSala Chile" width="360" height="80"></a>
+    <div class="top-actions">
+      <span class="lang">🇨🇱 Chile · español</span>
+      <a class="btn btn-ghost" href="../iniciar-sesion/">Ingresar</a>
+      <a class="btn btn-primary" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Abrir BetSala</a>
+    </div>
+  </div>
+  <nav class="mainnav"><div class="mainnav-inner"><a class="" href="../casino/">🎰 Casino</a><a class="" href="../tragamonedas/">🎲 Tragamonedas</a><a class="" href="../casino-en-vivo/">♠ En vivo</a><a class="" href="../apuestas-deportivas/">⚽ Deportes</a><a class="" href="../aviator/">✈ Aviator</a><a class="" class="active" href="../promociones/">🎁 Promos</a><a class="" href="../codigo-promocional/">🏷 Códigos</a><a class="" href="../app/">📱 App</a><a class="" href="../vip/">👑 VIP</a></div></nav>
 </header>
-<main>
-<section class="hero">
-<div class="container hero-grid">
-<div>
-<div class="breadcrumbs"><a href="../">Inicio</a><span class="sep">/</span><span>BetSala Promociones</span></div>
-<h1>BetSala Promociones: bonos, giros y campañas con lectura responsable</h1>
-<p class="lead">Las promociones pueden verse atractivas, pero su valor real depende de condiciones. Esta guía separa bonos de casino, free bets, giros y campañas recurrentes.</p>
-<div class="hero-cta"><a class="btn btn-primary" data-nosnippet="" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Ir a BetSala</a><a class="btn btn-ghost" href="../codigo-promocional/">Ver códigos</a></div>
+
+<div class="modal-overlay" id="modal-1" role="dialog" aria-modal="true" aria-labelledby="modal-title-1">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(1)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-01.webp" alt="Free Bet Deportiva" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-1">Free Bet Deportiva</h2>
+    <div class="modal-content">
+<p>Si eres nuevo en Betsala Deportes, ¡tienes una Free Bet de $30.000 pesos esperándote!</p>
+<p>¿Cómo conseguir tu Bono de Bienvenida para Deportes?</p>
+<ol>
+<li>Regístrate en Betsala y realiza tu primer depósito.</li>
+<li>Realiza una primera apuesta simple o combinada, de $10.000 CLP o más en cualquier mercado deportivo, con cuota mínima 1.80, en prepartido o en vivo.</li>
+<li>Recibe directamente una Free Bet de $30.000 CLP para usarla en cualquier mercado deportivo.</li>
+</ol>
+<p>Contáctanos a través del Chat o en <a href="mailto:soporte@betsala.com">soporte@betsala.com</a> con el código promocional OMW7 si tienes cualquier duda.</p>
+<p><strong>Términos y Condiciones Bono de Bienvenida Deportes.</strong></p>
+<ol>
+<li>Esta promoción estará disponible para nuevos usuarios registrados en Betsala a partir de las 00:00h del 1 de junio de 2026.</li>
+<li>La promoción es exclusiva para nuevos usuarios con cuentas y apuestas en CLP. Quedan excluidas las cuentas o apuestas realizadas en otra moneda.</li>
+<li>El cliente dispondrá de un plazo de 7 días desde la fecha de registro para completar los requisitos de la promoción.</li>
+<li>Para participar en la promoción, el cliente deberá completar correctamente el proceso de registro conforme a las políticas de Betsala.</li>
+<li>El cliente deberá realizar una primera apuesta mínima de $10.000 CLP en cualquier mercado deportivo disponible en Betsala, con cuota mínima total de 1.80.</li>
+<li>Serán válidas apuestas simples o combinadas, realizadas en prepartido o en vivo.</li>
+<li>Las apuestas realizadas a los mercados Apuestas Especiales, Combinada del Día, Cuotas Aumentadas y Rajazo o cualquier otro tipo de apuesta especial, no contabilizan para esta promoción.</li>
+<li>Las apuestas realizadas con el Aumentador de Ganancias, dinero de bono, Free Bet, devueltas/canceladas o que hayan sido cobradas mediante la función Cash-out no contarán para la promoción.</li>
+<li>Una vez realizada la apuesta clasificatoria, el cliente recibirá directamente una Free Bet de $30.000 CLP.</li>
+<li>La Free Bet podrá utilizarse en cualquier mercado deportivo, en apuestas simples o combinadas, prepartido o en vivo, con cuota mínima total de 1.50.</li>
+<li>El importe de la Free Bet no es retirable. Las ganancias máximas obtenidas mediante la Free Bet estarán limitadas a $300.000 CLP.</li>
+<li>La Free Bet tendrá una validez de 5 días desde el momento de su acreditación. Una vez transcurrido dicho plazo, caducará automáticamente.</li>
+<li>Si la Free Bet caduca o es utilizada en una apuesta anulada o devuelta, se considerará como utilizada y no será reemplazada.</li>
+<li>Solo se permitirá un (1) Bono de Bienvenida de Deportes por usuario, cuenta, dirección IP, dispositivo y/o método de pago.</li>
+<li>Betsala se reserva el derecho de excluir a cualquier usuario o cancelar cualquier beneficio promocional en caso de detectar actividad fraudulenta, abusiva o contraria al espíritu de la promoción.</li>
+<li>Esta promoción no es acumulable con otras promociones de adquisición, bienvenida o registro, salvo indicación expresa.</li>
+<li>Betsala se reserva el derecho de modificar, suspender o cancelar esta promoción en cualquier momento y sin previo aviso.</li>
+<li>La participación en esta promoción implica la aceptación íntegra de estos términos y condiciones y de los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>OMW7</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
 </div>
-<div class="hero-img"><img alt="BetSala Promociones Chile" height="675" loading="eager" src="../images/welcome-bonus.webp" width="1200"/></div>
+</div>
+<div class="modal-overlay" id="modal-2" role="dialog" aria-modal="true" aria-labelledby="modal-title-2">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(2)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-02.webp" alt="Pack Casino Bienvenida" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-2">Pack Casino Bienvenida</h2>
+    <div class="modal-content">
+<p>Te damos la bienvenida al Casino Betsala con un bono del 150% hasta $300.000 CLP en tu primer depósito, más hasta 200 Giros Gratis para usar en las tragamonedas de Pragmatic Play.</p>
+<p><strong>¿Cómo consigo mi pack de bienvenida?</strong></p>
+<ol>
+<li>Regístrate.</li>
+<li>Dirígete a la sección Bonos dentro de tu cuenta y reclama tu Bono del 150% de tu primer depósito.</li>
+<li>Deposita $5.000 CLP o más y recibe tu Bono del 150% hasta $300.000. Dependiendo del monto de tu depósito también recibirás hasta 200 Giros Gratis.</li>
+</ol>
+<p><strong>¿Cuándo recibo mis Giros Gratis?</strong></p>
+<p>Comenzarás a recibir tus Giros Gratis después de reclamar el Bono de primer depósito y realizar tu depósito de $5.000 CLP o más. Recuerda activar los Giros en la sección bonos -> giros gratis de tu cuenta para poder usarlos.</p>
+<p>Contáctanos a través del Chat o en <a href="mailto:soporte@betsala.com">soporte@betsala.com</a> con el código promocional CASINO1DEP si tienes cualquier duda.</p>
+<p><strong>Términos y condiciones del bono de "150% de tu primer depósito + hasta 200 Giros":</strong></p>
+<ul>
+<li>Esta promoción es válida para los nuevos usuarios que se registren desde las 10:30h. del 11/03/24 y realicen su primer depósito en Betsala.</li>
+</ul>
+<ul>
+<li>Reclama tu bono del primer depósito en la sección Bonos de tu cuenta. Luego realiza tu depósito de $5.000 CLP o más y recibe el bono del 150% del total depositado hasta $300.000 o $300 USD. Ejemplos: Si tu primer depósito es de $5.000, tu bono será de $7.500 (tendrás $12.500 para jugar), si tu primer depósito es de $50.000, tu bono será de $75.000 (tendrás $125.000 para jugar), si tu primer depósito es de $200.000, tu bono será de $300.000 (tendrás $500.000 para jugar).</li>
+</ul>
+<ul>
+<li>Si realizas tu depósito previo a la activación del bono este no se acreditará en tu cuenta.</li>
+</ul>
+<ul>
+<li>Este bono no es compatible con el Bono de Bienvenida del primer depósito en la sección Deportes, por lo que solo podrás disfrutar de uno de los dos.</li>
+</ul>
+<ul>
+<li>El bono estará disponible durante 10 días luego de su acreditación. El bono podrá jugarse en Slots (Tragamonedas), Juegos de Mesa y Casino En Vivo.</li>
+</ul>
+<ul>
+<li>Además, dependiendo del monto de tu primer depósito, también recibirás hasta 200 Giros Gratis:</li>
+</ul>
+<ul>
+<li>Si depositas entre $5.000 - $9.999, recibirás 25 Giros Gratis.</li>
+</ul>
+<ul>
+<li>Si depositas entre $10.000 - $49.999, recibirás 50 Giros Gratis.</li>
+</ul>
+<ul>
+<li>Si depositas entre $50.000 - $99.999, recibirás 100 Giros Gratis.</li>
+</ul>
+<ul>
+<li>Si depositas entre $100.000 - $149.999, recibirás 150 Giros Gratis.</li>
+</ul>
+<ul>
+<li>Si depositas $150.000 o más, recibirás 200 Giros Gratis.</li>
+</ul>
+<ul>
+<li>Los Giros Gratis sólo están disponibles para usuarios con moneda en CLP. Quedan excluidas las cuentas en otra moneda.</li>
+</ul>
+<ul>
+<li>La oferta de hasta 200 Giros Gratis sólo está disponible durante 7 días. Si realizas tu primer depósito a partir del séptimo día después de tu registro, no recibirás los Giros Gratis, sólo el Bono del 150%.</li>
+</ul>
+<ul>
+<li>Los giros gratis estarán disponibles para las tragamonedas seleccionadas de Pragmatic Play y caducan 2 días después de su acreditación. Los giros tienen un valor de 100 CLP cada uno. Para poder usarlos, tienes que aceptar tus Giros Gratis en la sección Bonos dentro de tu cuenta.</li>
+</ul>
+<ul>
+<li>Las tragamonedas de Pragmatic Play seleccionadas para usar tus Giros Gratis son las siguientes:</li>
+</ul>
+<ul>
+<li>5 Lions Megaways</li>
+</ul>
+<ul>
+<li>Bee Keeper</li>
+</ul>
+<ul>
+<li>Big Bass Bonanza 1000</li>
+</ul>
+<ul>
+<li>El Huaso Suertudo</li>
+</ul>
+<ul>
+<li>Gates of Betsala</li>
+</ul>
+<ul>
+<li>Gates of Olympus 1000™</li>
+</ul>
+<ul>
+<li>Gates of Olympus Super Scatter</li>
+</ul>
+<ul>
+<li>Gold Party®</li>
+</ul>
+<ul>
+<li>John Hunter and the Tomb of the Scarab Queen</li>
+</ul>
+<ul>
+<li>Starlight Princess 1000™</li>
+</ul>
+<ul>
+<li>Sugar Rush 1000</li>
+</ul>
+<ul>
+<li>Sweet Bonanza 1000</li>
+</ul>
+<ul>
+<li>Sweet Bonanza Super Scatter</li>
+</ul>
+<ul>
+<li>Wisdom of Athena 1000</li>
+</ul>
+<ul>
+<li>Zombie School Megaways</li>
+</ul>
+<ul>
+<li>Las ganancias obtenidas con los giros gratis pasarán directamente a tu saldo real.</li>
+</ul>
+<ul>
+<li>Si tus giros gratis caducan se considerarán como utilizados y no te acreditaremos unos nuevos.</li>
+</ul>
+<ul>
+<li>El bono deberá jugarse un total de 25 veces (la cantidad depositada + el bono) antes de poder convertirse en dinero real. El máximo de bono que puede convertir en dinero real con dicho bono es de $1.000.000 de pesos chilenos.</li>
+</ul>
+<ul>
+<li>Mientras el bono esté activo tus retiros estarán restringidos hasta que completes los requisitos de apuesta. Si cancelas el bono sin completar dichos requisitos, la cantidad no jugada del depósito se transferirá al saldo real de tu cuenta.</li>
+</ul>
+<ul>
+<li>Las Slots (Tragamonedas) cuentan en un 100% para el Requisito de apuesta. Los juegos de mesa y Casino En Vivo de los proveedores seleccionados solo cuentan un 10% del total. Por lo que si juega en juegos de mesa cada apuesta contará para el 10% las 25 veces requeridas para desbloquear los fondos del bono.</li>
+</ul>
+<ul>
+<li>Los juegos de Slots (Tragamonedas) válidos para completar el requisito de apuesta son los siguientes:</li>
+</ul>
+<ul>
+<li>Pragmatic Play: todos los juegos.</li>
+</ul>
+<ul>
+<li>Hacksaw: Le Bandit, Wanted Dead or a Wild, Duel at Down, Hand of Anubis, Le Pharaoh y Le King.</li>
+</ul>
+<ul>
+<li>Games Global: Amazing Link Zeus y Aztec Triple Riches.</li>
+</ul>
+<ul>
+<li>NoLimit City: Mental 2, Deadwood R.I.P, Duck Hunters, Tanked y Blood and Shadow 2.</li>
+</ul>
+<ul>
+<li>PG Soft: Fortune Tiger, Fortune Rabbit y Fortune Dragon.</li>
+</ul>
+<ul>
+<li>VoltEnt: Hot slot 777 Hold the jackpot, Mighty Wild Jaguar, 15 Coins Grand Diamond Edition y Sizzling 777 Deluxe.</li>
+</ul>
+<ul>
+<li>Los juegos de Slots de estos proveedores contarán un 100% del total del requisito de apuesta. Ejemplo: Si depositas $200.000 pesos y recibes $300.000 de bono, y los juegas en Slots deberás jugar un total de $12.500.000 pesos ($500.000 x 25).</li>
+</ul>
+<ul>
+<li>Los proveedores de Juegos de Mesa o Casino En Vivo seleccionados son Evolution, Playtech y Spribe. Los Juegos de Mesa o Casino En Vivo de estos proveedores contarán sólo un 10% del requisito total de apuesta. Ejemplo: Si depositas $200.000 pesos y recibes $300.000 de bono, y los juegas en Juegos de Mesa o Casino En Vivo deberás jugar un total de $125.000.000 pesos ($500.000 x 25 x 10).</li>
+</ul>
+<ul>
+<li>El máximo de dinero real transformable a través del bono es de $1.000.000 de pesos.</li>
+</ul>
+<ul>
+<li>El bono está disponible solo para una cuenta por persona, familia, hogar, dirección (postal o IP). En caso de sospecha de fraude cometido a través de múltiples registros (cuentas falsas, duplicadas o grupos de juego), Betsala se reserva el derecho de anular el bono y las ganancias generadas. Si se registra una segunda cuenta, se eliminará y se cancelarán todos los bonos y ganancias del juego.</li>
+</ul>
+<ul>
+<li>El bono NO es compatible con otras promociones de Betsala que estén vigentes mientras tenga activo el bono en su cuenta.</li>
+</ul>
+<ul>
+<li>Betsala se reserva el derecho de cambiar, cancelar, reclamar o rechazar cualquier promoción a su discreción en cualquier momento.</li>
+</ul>
+<ul>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ul>
+    </div>
+    <p class="promo-code-small">Código: <strong>CASINO1DEP</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-5" role="dialog" aria-modal="true" aria-labelledby="modal-title-5">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(5)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-05.webp" alt="Pasaporte Mundialista" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-5">Pasaporte Mundialista</h2>
+    <div class="modal-content">
+<p>En la Copa del Mundo se ven los mejores. Y en Betsala la apuesta será mucho mayor con las Misiones Mundialistas: cada día tendrás un desafío, que te permitirá ganar premios y sumar sellos a tu Pasaporte Mundialista. Júntalos y conseguirás recompensas de 5, 10 y 20 mil pesos en Free Bets, a medida de que avances.</p>
+<p>Completa las misiones de Betsala y suma bonos para que vivas el Mundial 2026 desde primera fila, en la Sala de los Campeones.</p>
+<p>¿Cómo funciona la promoción?</p>
+<ol>
+<li>Inicia sesión en tu cuenta Betsala.</li>
+<li>Accede a la sección "Misiones Disponibles > Misiones Mundialistas".</li>
+<li>Completa la misión diaria disponible para ese día.</li>
+<li>Recibe el premio correspondiente una vez validada tu participación.</li>
+<li>Una vez cumplidos los requisitos de la misión correspondiente, recibirás el premio asociado a dicha misión.</li>
+</ol>
+<p>Cumple misiones y gana premios extra</p>
+<table class="bonus-table"><tbody>
+<tr><th>Requisito</th><th>Premio extra (CLP)</th></tr>
+<tr><td>Completa las primeras 5 misiones</td><td>Free Bet de $5.000</td></tr>
+<tr><td>Completa las primeras 10 misiones</td><td>Free Bet de $10.000</td></tr>
+<tr><td>Completa las 17 misiones</td><td>Free Bet de $20.000</td></tr>
+</tbody></table>
+<p>Si tienes consultas, puedes contactarnos a través del Chat o en <a href="http://soporte@betsala.com/">soporte@betsala.com</a>, con el código promocional UNT2.</p>
+<p>Términos y condiciones</p>
+<ol>
+<li>La promoción estará disponible desde las 00:00h del 11 de junio de 2026 hasta las 23:59h del 27 de junio de 2026 (GMT-4).</li>
+<li>La promoción es exclusiva para usuarios con cuentas y apuestas en CLP. Quedan excluidas las cuentas o apuestas realizadas en otra moneda.</li>
+<li>Para participar, los usuarios deberán acceder a la sección "Misiones Mundialistas" y completar la misión diaria publicada por Betsala.</li>
+<li>Las misiones podrán estar vinculadas a uno o varios partidos de la Copa Mundial, así como a mercados, tipos de apuesta o mecánicas específicas definidas por Betsala.</li>
+<li>Los detalles de cada misión, incluyendo requisitos de participación, importe mínimo de apuesta, cuota mínima aplicable, mercados válidos, fechas y premios correspondientes, estarán disponibles exclusivamente en la sección "Misiones Mundialistas".</li>
+<li>Las misiones podrán incluir, entre otras, mecánicas de:</li>
+</ol>
+<ul class="sub-list">
+<li>Bet & Get.</li>
+<li>Free Bets.</li>
+<li>Risk Free Bets.</li>
+<li>Matched Bets.</li>
+<li>Giros Gratis.</li>
+<li>Apuestas en vivo.</li>
+<li>Apuestas combinadas.</li>
+<li>Mercados de goleadores.</li>
+</ul>
+<ol>
+<li>Cada misión tendrá una duración limitada y únicamente podrá completarse dentro del periodo indicado para dicha misión.</li>
+<li>A efectos de esta promoción, solo contará la primera apuesta clasificatoria para cada misión, realizada con dinero real.</li>
+<li>Las apuestas realizadas a los mercados Apuestas Especiales, Combinada del Día, Cuotas Aumentada, Rajazo u otro mercado especial no contabilizan para esta promoción.</li>
+<li>Las apuestas realizadas con el Aumentador de Ganancias, dinero de bono, Free Bet, devueltas/canceladas o que hayan sido cobradas mediante la función Cash-out no contarán para la promoción.</li>
+<li>Cada misión podrá completarse una única vez por usuario, salvo que se indique expresamente lo contrario.</li>
+<li>Los premios podrán consistir en:</li>
+</ol>
+<ul class="sub-list">
+<li>Free Bets</li>
+<li>Giros Gratis</li>
+<li>Aumentadores de Ganancia</li>
+<li>Otros incentivos promocionales definidos por Betsala.</li>
+</ul>
+<ol>
+<li>Los premios serán acreditados dentro de las 24 horas posteriores a la validación de la misión correspondiente, salvo que se indique un plazo distinto en la propia misión.</li>
+<li>Las condiciones específicas de utilización de cada premio, incluyendo validez, cuotas mínimas, mercados permitidos, rollover, límites de ganancia y cualquier otra restricción aplicable, estarán detalladas en la misión correspondiente o en los términos específicos del premio otorgado.</li>
+<li>Betsala podrá establecer límites máximos de participación, acreditación o utilización de premios para determinadas misiones.</li>
+<li>Las misiones y premios no son transferibles ni canjeables por dinero en efectivo, salvo que se indique expresamente lo contrario.</li>
+<li>Solo se permitirá una cuenta por usuario. La participación está limitada a una única cuenta, dirección IP, dispositivo y/o método de pago.</li>
+<li>Cualquier comportamiento fraudulento, abusivo, colusorio o contrario al espíritu de la promoción podrá resultar en la exclusión inmediata del usuario y en la retirada de cualquier premio acreditado.</li>
+<li>Betsala se reserva el derecho de verificar el cumplimiento de los requisitos de cualquier misión antes de acreditar el premio correspondiente.</li>
+<li>Betsala podrá modificar, sustituir o cancelar cualquier misión individual durante el periodo promocional cuando existan razones operativas, comerciales, regulatorias o técnicas que así lo justifiquen.</li>
+<li>Betsala se reserva el derecho de modificar, suspender o cancelar esta promoción en cualquier momento y sin previo aviso.</li>
+<li>Esta promoción es incompatible con otras promociones activas de Betsala.</li>
+</ol>
+<p>Pasaporte Mundialista</p>
+<ol>
+<li>Además de los premios diarios, los usuarios podrán obtener recompensas adicionales por completar misiones durante la promoción.</li>
+<li>Los premios del Pasaporte Mundialista serán:</li>
+</ol>
+<ul class="sub-list">
+<li>Completa las 5 primeras misiones → Free Bet de $5.000 CLP.</li>
+<li>Completa las 10 primeras misiones → Free Bet de $10.000 CLP.</li>
+<li>Completa 17 misiones → Free Bet de $20.000 CLP.</li>
+</ul>
+<ol>
+<li>Las 5 primeras misiones se corresponden con las misiones de la 1 a la 5. Las 10 primeras misiones se corresponden con las misiones de la 1 a las 10. Las 17 misiones se corresponden con el total de misiones disponibles, desde la misión 1 a la 17.</li>
+<li>Cada misión completada contará como una (1) misión válida para el Pasaporte Mundialista.</li>
+<li>Los premios del Pasaporte Mundialista se acreditarán dentro de las 24 horas posteriores a la finalización de la promoción.</li>
+<li>Los premios del Pasaporte Mundialista son acumulables entre sí y compatibles con los premios diarios obtenidos durante la promoción.</li>
+<li>La participación en la promoción implica la aceptación íntegra de estos términos y condiciones, así como de los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>UNT2</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-6" role="dialog" aria-modal="true" aria-labelledby="modal-title-6">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(6)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-06.webp" alt="Prize Drop Mundialero" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-6">Prize Drop Mundialero</h2>
+    <div class="modal-content">
+<p>El Mundial también llegó a las tragamonedas de Casino Betsala y con una promoción inigualable. Participa por un pozo de $2.250.000 CLP a repartir en el Prize Drop Mundialero, donde con un solo giro puedes ganar premios en DINERO REAL. Ingresa a la slot Big Bass Football Bonanza y con cada tirada desde $300 CLP tendrás la oportunidad de quedarte con uno de las 100 recompensas en efectivo. Porque cuando se unen el fútbol y tu pasión por las tragamonedas, el triunfo se disfruta el doble.</p>
+<p>¿Cómo funciona la promoción?</p>
+<ol>
+<li>Inicia sesión en tu cuenta Betsala.</li>
+<li>Juega en Big Bass Football Bonanza con apuestas desde $300 CLP.</li>
+<li>Cada giro puede convertirte en uno de los ganadores de los 100 premios instantáneos repartidos durante la promoción.</li>
+</ol>
+<p>Si tienes consultas, puedes contactarnos a través del Chat o en <a href="http://soporte@betsala.com/">soporte@betsala.com</a>, con el código promocional ZKM7.</p>
+<p>Términos y condiciones</p>
+<ol>
+<li>La promoción estará disponible desde las 00:00h del 11 de junio de 2026 hasta las 23:59h del 28 de junio de 2026 (hora de Chile).</li>
+<li>La promoción es exclusiva para usuarios con cuentas y apuestas en CLP.</li>
+<li>La promoción se desarrollará exclusivamente en la tragamonedas Big Bass Football Bonanza de Pragmatic Play.</li>
+<li>Para participar, el cliente deberá realizar apuestas con dinero real en la tragamonedas seleccionada durante el periodo promocional.</li>
+<li>La apuesta mínima válida para participar será de $300 CLP por giro.</li>
+<li>La promoción contará con un fondo total de premios de $2.250.000 CLP, repartidos en 100 premios de $22.500 CLP cada uno.</li>
+<li>Los premios serán otorgados de forma aleatoria mediante la mecánica Prize Drops de Pragmatic Play.</li>
+<li>Los jugadores ganadores serán seleccionados automáticamente por los sistemas de Pragmatic Play entre todos los participantes de la promoción.</li>
+<li>Los premios se acreditarán en efectivo y serán completamente retirables.</li>
+<li>Solo serán válidas las apuestas realizadas con saldo real y liquidadas correctamente dentro del periodo promocional.</li>
+<li>Las apuestas realizadas mediante Giros Gratis, bonos u otros saldos promocionales podrán quedar excluidas de la promoción.</li>
+<li>Betsala no interviene en la selección de los ganadores ni en la asignación de los premios, siendo este un proceso gestionado íntegramente por Pragmatic Play.</li>
+<li>Un mismo usuario podrá resultar ganador en más de una ocasión durante el periodo promocional, salvo limitación expresa establecida por el proveedor de la promoción.</li>
+<li>La participación está limitada a una única cuenta por usuario. Betsala se reserva el derecho de excluir a cualquier participante que utilice múltiples cuentas o realice actividades fraudulentas, abusivas o contrarias al espíritu de la promoción.</li>
+<li>En caso de error técnico, humano o de sistema relacionado con la promoción, Betsala y/o Pragmatic Play se reservan el derecho de corregir, modificar o cancelar cualquier resultado o premio afectado.</li>
+<li>Todas las decisiones relacionadas con la mecánica Prize Drops, la selección de ganadores y la distribución de premios serán determinadas por Pragmatic Play y tendrán carácter definitivo.</li>
+<li>Betsala se reserva el derecho de modificar, suspender o cancelar esta promoción en cualquier momento cuando existan causas justificadas.</li>
+<li>La participación en esta promoción implica la aceptación íntegra de estos términos y condiciones, así como de los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>ZKM7</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-8" role="dialog" aria-modal="true" aria-labelledby="modal-title-8">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(8)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-08.webp" alt="Torneo Multiplicadores" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-8">Torneo Multiplicadores</h2>
+    <div class="modal-content">
+<p>¡Oye pero qué maravilla! Mientras todos están pendiente del Mundial, Casino Betsala reparte un millón de pesos cada semana en premios en efectivo. Con el torneo Dos Millones en Dos Semanas, tienes que buscar el mayor multiplicador en tragamonedas seleccionadas para subir en el ranking. Si estás entre los 20 mejores, habrá una recompensa en DINERO REAL para ti.</p>
+<p>Encuentra tu mejor actuación y llévate un gran premio y el honor de estar entre los mejores.</p>
+<p>¿Cómo funciona la promoción?</p>
+<ol>
+<li>Inicia sesión en tu cuenta Betsala y participa en el torneo jugando en las tragamonedas seleccionadas durante el periodo promocional.</li>
+<li>Realiza apuestas de $150 CLP o más y busca tu mayor multiplicador.</li>
+<li>Los 20 primeros jugadores del ránking se repartirán cada semana un pozo de $1.000.000 CLP en efectivo.</li>
+</ol>
+<p>Contáctanos a través del Chat o en <a href="mailto:soporte@betsala.com">soporte@betsala.com</a> con el código promocional VLC8 para todas tus consultas.</p>
+<p>Términos y Condiciones</p>
+<ol>
+<li>Esta promoción estará disponible desde las 00:00h del 15 de junio de 2026 hasta las 23:59h del 28 de junio de 2026 (hora de Chile, GMT -4).</li>
+<li>La promoción es exclusiva para usuarios con cuentas y apuestas en CLP. Quedan excluidas las cuentas o apuestas realizadas en otra moneda.</li>
+<li>Para participar en el torneo, el cliente deberá realizar apuestas con dinero real en las tragamonedas seleccionadas durante el periodo promocional.</li>
+<li>Las tragamonedas seleccionadas para el torneo son:</li>
+</ol>
+<ul class="sub-list">
+<li>Sweet Bonanza 2500 (Pragmatic Play)</li>
+<li>Gates of Olympus Super Scatter (Pragmatic Play)</li>
+<li>Mahjong Wins Super Scatter (Pragmatic Play)</li>
+<li>Candy Rush (Pragmatic)</li>
+<li>Wanted Dead or a Wild (Hacksaw)</li>
+<li>Ox Coin (Voltent)</li>
+<li>Fortune Tiger (PG Soft)</li>
+</ul>
+<ol>
+<li>El importe mínimo por apuesta válida será de   $150 CLP por giro.</li>
+<li>El puntaje se calculará únicamente en base al mayor multiplicador obtenido en un solo giro, definido como: Ganancia total del giro ÷ Apuesta base del giro. Se entenderá como un solo giro el resultado final entregado por el juego, incluyendo cualquier mecánica interna (como respins, acumulaciones o funciones automáticas), siempre que provenga de una única apuesta inicial.</li>
+<li>Solo se registrará el mejor resultado del día por jugador; si se obtiene un multiplicador mayor, este reemplazará automáticamente al anterior. Los puntos no son acumulativos. Ejemplo:</li>
+</ol>
+<p>Apuestas $200 y el juego paga $1.000 en ese giro → 1.000 ÷ 200 = 5x (5 puntos)</p>
+<ol>
+<li>Solo se contabilizarán las apuestas realizadas con dinero real y resueltas dentro del periodo promocional correspondiente.</li>
+<li>La clasificación semanal se determinará mediante la suma de los mejores multiplicadores diarios obtenidos por cada participante durante dicho periodo promocional. Ejemplo:</li>
+</ol>
+<table class="bonus-table"><tbody>
+<tr><th>Fecha</th><th>Jugada</th><th>Multiplicador</th><th>Puntos</th></tr>
+<tr><td>15/6</td><td>Apuestas $200 y el juego paga $1.000 en ese giro → 1.000 ÷ 200</td><td>5x</td><td>5</td></tr>
+<tr><td>16/6</td><td>Apuestas $200 y el juego paga $2.000 en ese giro → 2.000 ÷ 200</td><td>10x</td><td>10</td></tr>
+<tr><td>17/6</td><td>Sin apuestas válidas</td><td></td><td>0</td></tr>
+<tr><td>18/6</td><td>Apuestas $200 y el juego paga $2.000 en ese giro → 2.000 ÷ 200</td><td>10x</td><td>10</td></tr>
+<tr><td>19/6</td><td>Apuestas $200 y el juego paga $1.000 en ese giro → 1.000 ÷ 200</td><td>5x</td><td>5</td></tr>
+<tr><td>20/6</td><td>Sin apuestas válidas</td><td></td><td>0</td></tr>
+<tr><td>21/6</td><td>Apuestas $200 y el juego paga $1.000 en ese giro → 1.000 ÷ 200</td><td>5x</td><td>5</td></tr>
+<tr><td>Semana</td><td>Puntuación acumulada</td><td></td><td>35</td></tr>
+</tbody></table>
+<ol>
+<li>Las apuestas realizadas con dinero de bono, Giros Gratis u otros saldos promocionales no contabilizarán para el torneo.</li>
+<li>No se considerarán válidas las apuestas realizadas mediante funcionalidades de compra de bono (“Bonus Buy”), si estuvieran disponibles en alguno de los juegos participantes.</li>
+<li>El torneo estará dividido en 2 rankings semanales independientes:</li>
+</ol>
+<ul class="sub-list">
+<li>Semana 1: del 15 de junio de 2026 a las 00:00h hasta el 21 de junio de 2026 a las 23:59h.</li>
+<li>Semana 2: del 22 de junio de 2026 a las 00:00h hasta el 28 de junio de 2026 a las 23:59h.</li>
+</ul>
+<ol>
+<li>Cada semana contará con un pozo independiente de $1.000.000 CLP.</li>
+<li>El ranking semanal se determinará en función de la cantidad total de puntos acumulados durante la semana correspondiente.</li>
+<li>En caso de empate en puntos, la posición se determinará en función del jugador que haya alcanzado primero dicha puntuación.</li>
+<li>El torneo requerirá un mínimo de 20 jugadores participantes por semana para su activación. En caso contrario, Betsala se reserva el derecho de cancelar o modificar el torneo correspondiente.</li>
+<li>La distribución semanal del pozo de premios de $1.000.000 CLP será la siguiente:</li>
+</ol>
+<table class="bonus-table"><tbody>
+<tr><th>Posición</th><th>Premio (CLP)</th><th>%</th></tr>
+<tr><td>1</td><td>$400.000</td><td>40</td></tr>
+<tr><td>2</td><td>$200.000</td><td>20</td></tr>
+<tr><td>3</td><td>$100.000</td><td>10</td></tr>
+<tr><td>4</td><td>$60.000</td><td>6</td></tr>
+<tr><td>5</td><td>$40.000</td><td>4</td></tr>
+<tr><td>6 a 10</td><td>$20.000</td><td>2</td></tr>
+<tr><td>11 a 20</td><td>$10.000</td><td>1</td></tr>
+</tbody></table>
+<ol>
+<li>Los premios serán acreditados en efectivo en la cuenta del cliente dentro de las 72 horas posteriores a la finalización de cada semana.</li>
+<li>Los premios acreditados serán retirables.</li>
+<li>Se permitirá ganar un máximo de un (1) premio por usuario y por ranking semanal.</li>
+<li>La participación está limitada a una única cuenta por usuario, dirección IP, dispositivo y/o método de pago.</li>
+<li>Cualquier comportamiento abusivo, fraudulento o contrario al espíritu de la promoción podrá resultar en la exclusión del torneo y la retirada de premios.</li>
+<li>En caso de error técnico, humano o de sistema en el cómputo de puntos o acreditación de premios, Betsala se reserva el derecho de ajustar, modificar o cancelar los resultados y/o premios correspondientes.</li>
+<li>Esta promoción no es acumulable con otras promociones, salvo indicación expresa.</li>
+<li>Betsala se reserva el derecho de modificar, suspender o cancelar esta promoción en cualquier momento.</li>
+<li>La participación en la promoción implica la aceptación íntegra de estos términos y condiciones y de los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>VLC8</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-3" role="dialog" aria-modal="true" aria-labelledby="modal-title-3">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(3)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-03.webp" alt="Segundo Depósito Casino" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-3">Segundo Depósito Casino</h2>
+    <div class="modal-content">
+<p>El Casino Betsala también premia tu segundo depósito con un bono del 100% hasta $200.000 CLP, más hasta 100 Giros Gratis para usar en las tragamonedas de Pragmatic Play.</p>
+<p>¿Cómo consigo mi pack de segundo depósito?</p>
+<ol>
+<li>Accede a tu cuenta Betsala.</li>
+<li>Dirígete a la sección Bonos dentro de tu cuenta y reclama tu Bono del 100% de tu segundo depósito.</li>
+<li>Deposita $5.000 CLP o más y recibe tu Bono del 100% hasta $200.000. Dependiendo del monto de tu depósito también recibirás hasta 100 Giros Gratis.</li>
+</ol>
+<p>¿Cuándo recibo mis Giros Gratis?</p>
+<p>Comenzarás a recibir tus Giros Gratis después de reclamar el Bono de segundo depósito y realizar tu depósito de $15.000 CLP o más. Recuerda activar los Giros en la sección bonos -> giros gratis de tu cuenta para poder usarlos.</p>
+<p>Contáctanos a través del Chat o en <a href="mailto:soporte@betsala.com">soporte@betsala.com</a> con el código promocional CASINODEP2 si tienes cualquier duda.</p>
+<p><strong>Términos y condiciones del bono de "100% de tu segundo depósito + hasta 100 Giros"</strong></p>
+<ol>
+<li>Esta promoción es válida para todos los usuarios que se registren desde las 10:30h. del 11/03/26 y ya hayan realizado su primer depósito en Betsala.</li>
+<li>Reclama tu bono del segundo depósito en la sección Bonos de tu cuenta. Luego realiza tu depósito de $5.000 CLP o más y recibe el bono del 100% del total depositado hasta $200.000 o $200 USD. Ejemplos: Si tu segundo depósito es de $5.000, tu bono será de $5.000 (tendrás $10.000 para jugar), si tu segundo depósito es de $50.000, tu bono será de $50.000 (tendrás $100.000 para jugar), si tu segundo depósito es de $200.000, tu bono será de $200.000 (tendrás $400.000 para jugar).</li>
+<li>Si tienes activado un bono anterior, pero no lo has usado/completado, deberás cancelarlo antes de aceptar este.</li>
+<li>Si realizas tu depósito previo a la activación del bono este no se acreditará en tu cuenta.</li>
+<li>El bono estará disponible durante 10 días luego de su acreditación. El bono podrá jugarse en Slots (Tragamonedas), Juegos de Mesa y Casino En Vivo.</li>
+<li>Además, dependiendo del monto de tu segundo depósito, también recibirás hasta 100 Giros Gratis:</li>
+</ol>
+<ul class="sub-list">
+<li>Si depositas entre $5.000 - $9.999, recibirás 15 Giros Gratis.</li>
+<li>Si depositas entre $10.000 - $49.999, recibirás 25 Giros Gratis.</li>
+<li>Si depositas entre $50.000 - $99.999, recibirás 50 Giros Gratis.</li>
+<li>Si depositas entre $100.000 - $149.999, recibirás 75 Giros Gratis.</li>
+<li>Si depositas $150.000 o más, recibirás 100 Giros Gratis.</li>
+</ul>
+<ol>
+<li>Los Giros Gratis sólo están disponibles para usuarios con moneda en CLP. Quedan excluidas las cuentas en otra moneda.</li>
+<li>La oferta de hasta 100 Giros Gratis sólo está disponible durante 7 días. Si realizas tu segundo depósito a partir del séptimo día después de su activación, no recibirás los Giros Gratis, sólo el Bono del 100%.</li>
+<li>Los giros gratis estarán disponibles para las tragamonedas seleccionadas de Pragmatic Play y caducan 2 días después de su acreditación. Los giros tienen un valor de 100 CLP cada uno. Para poder usarlos, tienes que aceptar tus Giros Gratis en la sección Bonos dentro de tu cuenta.</li>
+<li>Las tragamonedas de Pragmatic Play seleccionadas para usar tus Giros Gratis son las siguientes:</li>
+</ol>
+<ul class="sub-list">
+<li>5 Lions Megaways</li>
+<li>Bee Keeper</li>
+<li>Big Bass Bonanza 1000</li>
+<li>El Huaso Suertudo</li>
+<li>Gates of Betsala</li>
+<li>Gates of Olympus 1000™</li>
+<li>Gates of Olympus Super Scatter</li>
+<li>Gold Party®</li>
+<li>John Hunter and the Tomb of the Scarab Queen</li>
+<li>Starlight Princess 1000™</li>
+<li>Sugar Rush 1000</li>
+<li>Sweet Bonanza 1000</li>
+<li>Sweet Bonanza Super Scatter</li>
+<li>Wisdom of Athena 1000</li>
+<li>Zombie School Megaways</li>
+</ul>
+<ol>
+<li>Las ganancias obtenidas con los giros gratis pasarán directamente a tu saldo real.</li>
+<li>Si tus giros gratis caducan se considerarán como utilizados y no te acreditaremos unos nuevos.</li>
+<li>El bono deberá jugarse un total de 25 veces (la cantidad depositada + el bono) antes de poder convertirse en dinero real. El máximo de bono que puede convertir en dinero real con dicho bono es de $500.000 de pesos chilenos.</li>
+<li>Mientras el bono esté activo tus retiros estarán restringidos hasta que completes los requisitos de apuesta. Si cancelas el bono sin completar dichos requisitos, la cantidad no jugada del depósito se transferirá al saldo real de tu cuenta.</li>
+<li>Las Slots (Tragamonedas) cuentan en un 100% para el Requisito de apuesta. Los juegos de mesa y Casino En Vivo de los proveedores seleccionados solo cuentan un 10% del total. Por lo que si juega en juegos de mesa cada apuesta contará para el 10% las 25 veces requeridas para desbloquear los fondos del bono.</li>
+<li>Los juegos de Slots (Tragamonedas) válidos para completar el requisito de apuesta son los siguientes:</li>
+</ol>
+<ul>
+<li>Pragmatic Play: todos los juegos.</li>
+<li>Hacksaw: Le Bandit, Wanted Dead or a Wild, Duel at Down, Hand of Anubis, Le Pharaoh y Le King.</li>
+<li>Gamesglobal: Amazing Link Zeus y Aztec Triple Riches.</li>
+<li>NoLimit City: Mental 2, Deadwood R.I.P, Duck Hunters, Tanked y Blood and Shadow 2.</li>
+<li>PG Soft: Fortune Tiger, Fortune Rabbit y Fortune Dragon.</li>
+<li>VoltEnt: Hot slot 777 Hold the jackpot, Mighty Wild Jaguar, 15 Coins Grand Diamond Edition y Sizzling 777 Deluxe.</li>
+</ul>
+<ol>
+<li>Los juegos de Slots de estos proveedores contarán un 100% del total del requisito de apuesta. Ejemplo: Si depositas $200.000 pesos y recibes $200.000 de bono, y los juegas en Slots deberás jugar un total de $10.000.000 pesos ($400.000 x 25).</li>
+<li>Los proveedores de Juegos de Mesa o Casino En Vivo seleccionados son Evolution, Playtech y Spribe. Los Juegos de Mesa o Casino En Vivo de estos proveedores contarán sólo un 10% del requisito total de apuesta. Ejemplo: Si depositas $200.000 pesos y recibes $200.000 de bono, y los juegas en Juegos de Mesa o Casino En Vivo deberás jugar un total de $100.000.000 pesos ($400.000 x 25 x 10).</li>
+<li>El máximo de dinero real transformable a través del bono es de $500.000 de pesos.</li>
+<li>El bono está disponible solo para una cuenta por persona, familia, hogar, dirección (postal o IP). En caso de sospecha de fraude cometido a través de múltiples registros (cuentas falsas, duplicadas o grupos de juego), Betsala se reserva el derecho de anular el bono y las ganancias generadas. Si se registra una segunda cuenta, se eliminará y se cancelarán todos los bonos y ganancias del juego.</li>
+<li>El bono NO es compatible con otras promociones de Betsala que estén vigentes mientras tenga activo el bono en su cuenta. Además no podrá ser complementado con el bono de apuestas deportivas.</li>
+<li>Betsala se reserva el derecho de cambiar, cancelar, reclamar o rechazar cualquier promoción a su discreción en cualquier momento.</li>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>CASINODEP2</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-4" role="dialog" aria-modal="true" aria-labelledby="modal-title-4">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(4)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-04.webp" alt="Lunes Gates of Olympus" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-4">Lunes Gates of Olympus</h2>
+    <div class="modal-content">
+<p>Cada lunes disfruta de tus tragamonedas favoritas de la saga Gates of Olympus de Pragmatic Play, con las que podrás ganar 25 giros gratis para seguir disfrutando de nuestro Casino. Sólo tienes que jugar $25.000 pesos o más en los juegos y... ¡Ganes o pierdas recibirás tu premio!</p>
+<p><strong>¿Cómo funciona la promoción?</strong></p>
+<ol>
+<li>Accede a tu cuenta Betsala.</li>
+<li>Juega $25.000 CLP o más en las tragamonedas de la saga Gates of Olympus de Pragmatic Play durante el periodo promocional.</li>
+<li>El martes por la mañana recibirás tus 25 giros gratis para jugar en las mismas slots seleccionadas.</li>
+</ol>
+<p><strong>Las tragamonedas seleccionadas son:</strong></p>
+<ol>
+<li>Gates of Olympus</li>
+<li>Gates of Olympus 1000™</li>
+<li>Gates of Olympus X-Mas 1000</li>
+<li>Gates of Betsala</li>
+<li>Gates of Olympus Super Scatter</li>
+<li>Fortune of Olympus</li>
+</ol>
+<p>Contáctanos a través del Chat o en <a href="mailto:soporte@betsala.com">soporte@betsala.com</a> con el código promocional WAGGO2026 si tienes cualquier duda.</p>
+<p><strong>Términos y Condiciones de la Promoción:</strong></p>
+<ol>
+<li>Esta promoción está disponible cada lunes de 2026, desde las 00:00h hasta las 23:59h.</li>
+<li>La promoción sólo está disponible para usuarios con moneda/apuestas en CLP. Quedan excluidas las cuentas/apuestas en otra moneda.</li>
+<li>Juega $25.000 CLP o más en las tragamonedas de la saga Gates of Olympus de Pragmatic Play el lunes y consigue 25 giros gratis.</li>
+<li>Las tragamonedas seleccionadas son:</li>
+</ol>
+<ul class="sub-list">
+<li>Gates of Olympus</li>
+<li>Gates of Olympus 1000™</li>
+<li>Gates of Olympus X-Mas 1000</li>
+<li>Gates of Betsala</li>
+<li>Gates of Olympus Super Scatter</li>
+<li>Fortune of Olympus</li>
+</ul>
+<ol>
+<li>Puedes jugar el monto total en el mismo juego o repartido entre el resto.</li>
+<li>Únicamente serán válidas para la promoción las apuestas realizadas en estos juegos entre las 00:00 y las 23:59h. del lunes.</li>
+<li>Los 25 giros gratis se acreditarán los martes a las 9:00h.</li>
+<li>Los giros gratis tienen un valor de 100 CLP por giro, estarán disponibles para las slots seleccionadas arriba mencionadas y caducan 2 días después de su acreditación. Solo se acreditará un pack de Giros Gratis por usuario durante el periodo promocional.</li>
+<li>Si tus giros gratis caducan se considerarán como utilizados y no te acreditaremos unos nuevos.</li>
+<li>Las ganancias obtenidas con los giros gratis pasarán directamente a tu saldo real.</li>
+<li>Betsala se reserva el derecho de rechazar el bono si se tienen sospechas de que se ha hecho un uso fraudulento del mismo.</li>
+<li>BetSala se reserva el derecho de cambiar/cancelar esta promoción a su entera discreción en cualquier momento.</li>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>WAGGO2026</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-7" role="dialog" aria-modal="true" aria-labelledby="modal-title-7">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(7)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-07.webp" alt="Predictor El Vidente" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-7">Predictor El Vidente</h2>
+    <div class="modal-content">
+<p>Ahora puedes demostrar cuánto sabes de fútbol haciendo tus pronósticos y participando por el pozo de $500.000 en freebets de cada fecha. Juégatela GRATIS y transfórmate en El Vidente de Betsala.</p>
+<p>La segunda fecha del Vidente Mundialero ya está disponible. Requisito: haber realizado un depósito de $10.000 o más desde el 10 de junio de 2026.</p>
+<p>Términos y Condiciones de “El Vidente”</p>
+<ol>
+<li>Descripción del juego</li>
+</ol>
+<p>El Vidente es un juego de pronósticos deportivos donde los jugadores predicen los resultados de los partidos de fútbol seleccionados, y ganan puntos según la precisión de sus predicciones.</p>
+<p>Los torneos pueden estar compuestos por una o más rondas, y cada ronda puede incluir varios partidos seleccionados por el organizador.</p>
+<p>Los torneos pueden ser:</p>
+<ul class="sub-list">
+<li>gratuitos</li>
+<li>con un requisito de entrada</li>
+</ul>
+<p>Todas las predicciones se basan en el tiempo reglamentario del partido (90 minutos + tiempo agregado).</p>
+<ol>
+<li>Cómo ganar puntos</li>
+</ol>
+<p>Los jugadores obtienen puntos por predecir correctamente en cada partido:</p>
+<ul class="sub-list">
+<li>Resultado exacto</li>
+<li>Primer equipo en anotar</li>
+<li>Resultado del partido (local gana, empate o visitante gana)</li>
+<li>Diferencia de goles</li>
+<li>Total de goles</li>
+</ul>
+<p>Las predicciones pueden realizarse o modificarse hasta 5 minutos antes del inicio del partido.</p>
+<p>Los puntos se actualizan en tiempo real mientras el partido está en juego.</p>
+<ol>
+<li>Función x2 (bonus)</li>
+</ol>
+<p>En cada ronda, el jugador puede seleccionar una predicción para aplicar la función x2, que duplica los puntos obtenidos si la predicción es correcta.</p>
+<p>La selección puede cambiarse hasta 5 minutos antes del inicio del partido.</p>
+<ol>
+<li>Cómo jugar</li>
+</ol>
+<ul class="sub-list">
+<li>Selecciona una ronda activa en la pestaña Rondas. Se mostrará la lista de partidos de la ronda seleccionada.</li>
+<li>Haz clic en el partido para el cual deseas hacer una predicción.</li>
+</ul>
+<ul class="sub-list">
+<li>Ingresa un marcador entre 0 y 99 en el campo de resultado exacto. Tu pronóstico aparecerá en la tarjeta de predicción y la función x2 quedará disponible.</li>
+</ul>
+<ul class="sub-list">
+<li>Haz clic en el ícono + para mostrar las opciones disponibles para elegir el primer equipo en anotar. Podrás elegir entre:</li>
+<li>Equipo local</li>
+<li>Ninguno</li>
+<li>Equipo visitante</li>
+</ul>
+<ul class="sub-list">
+<li>Haz clic en el logo del equipo que, según tu pronóstico, marcará el primer gol del partido. El logo del equipo seleccionado se mostrará en la parte inferior del recuadro de detalles del partido (#2).</li>
+</ul>
+<ul class="sub-list">
+<li>Repite los pasos anteriores para todos los partidos incluidos en la ronda seleccionada.</li>
+<li>Finalmente, haz clic en el botón x2 para aplicarlo a la predicción que consideres más precisa. Al hacerlo, el puntaje máximo posible se duplica, lo que indica que la función x2 ha sido aplicada.</li>
+</ul>
+<ol>
+<li>Cálculo de puntos</li>
+</ol>
+<p>La cantidad de puntos otorgados se calcula de la siguiente forma:</p>
+<p>Número máximo de puntos para el tipo de predicción seleccionado − (Número máximo de puntos para el tipo de predicción seleccionado × Número de predicciones correctas de los jugadores / Número total de predicciones de los jugadores × 0,9) = Puntos*</p>
+<p>La cantidad de puntos otorgados depende del número de jugadores que hayan hecho la misma predicción.</p>
+<ul>
+<li>Si pocos jugadores aciertan, se otorgan más puntos.</li>
+<li>Si muchos jugadores aciertan, los puntos se reparten proporcionalmente.</li>
+</ul>
+<p>Cada tipo de predicción tiene un máximo de puntos posible. Tipo de predicciones/Puntos máximos:</p>
+<ul>
+<li>Marcador correcto del partido / 100 puntos</li>
+<li>Resultado del partido / 100 puntos</li>
+<li>Diferencia de goles del partido / 100 puntos</li>
+<li>Número de goles en el partido / 50 puntos</li>
+<li>Equipo en anotar primero / 100 puntos</li>
+</ul>
+<p>Ejemplo:</p>
+<p>Supongamos que 1000 jugadores han predicho el resultado del partido Arsenal vs Barcelona. De todos los jugadores, 400 predijeron una victoria del Arsenal, 50 predijeron un empate y 550 predijeron una victoria del Barcelona. Supongamos que el tiempo reglamentario del partido termina con una victoria del Arsenal por 3:2.</p>
+<p>En otras palabras, tenemos las siguientes variables de entrada:</p>
+<ul>
+<li>Número máximo de puntos para el tipo de predicción seleccionado (Resultado) = 100</li>
+<li>Número total de predicciones de los jugadores = 1000</li>
+<li>Número de predicciones correctas de los jugadores = 400</li>
+<li>Coeficiente de reducción = 0,9</li>
+</ul>
+<p>Los puntos se calculan según la siguiente fórmula:</p>
+<p>100 (Número máximo de puntos para el tipo de predicción Resultado) −</p>
+<p>100 (Número máximo de puntos para el tipo de predicción Resultado) ×</p>
+<p>400 (Número de predicciones correctas de los jugadores) /</p>
+<p>1000 (Número total de predicciones de los jugadores) × 0,9 = 64 puntos</p>
+<p>Por lo tanto, todos los jugadores que predijeron correctamente el resultado del partido reciben 64 puntos.</p>
+<p>Los puntos de los jugadores se muestran en la tabla de clasificación que se actualiza periódicamente. Los puntos de la tabla de clasificación se suman en un plazo de 24 horas tras la finalización de todos los partidos del torneo: El resumen de los resultados finales se realiza en base a los datos proporcionados por la página web oficial del torneo en cuestión y no está sujeto a cambios. El cambio de los resultados resumidos sólo es posible en caso de que los resultados dados hayan sido publicados incorrectamente debido a problemas técnicos.</p>
+<ol>
+<li>Premios</li>
+</ol>
+<p>La distribución de premios se indica en la sección Premios dentro del juego. Los premios se entregan hasta 10 días después de finalizada la ronda o el torneo.</p>
+<p>En torneos con pago de entrada, el pozo de premios se forma con las cuotas de los jugadores. El organizador puede cobrar una comisión del 10%.</p>
+<p>En los torneos con premios en Free Bet, las condiciones de las Free Bets serán las siguientes:</p>
+<ul>
+<li>Sólo se acreditará 1 Free Bet por usuario y fecha de El Vidente.</li>
+<li>La Free Bet debe utilizarse de una vez en las siguientes 48 horas de ser acreditada.</li>
+<li>La Free Bet solo podrá ser utilizada en la sección deportes a una cuota mínima de 1.5. Cuota mínima por selección en combinadas 1.25.</li>
+<li>Ganancia máxima 500% del valor de la Free Bet. Ejemplos; Si tu Free Bet es de $1.000 CLP, la ganancia máxima que puedes conseguir son $5.000 CLP. Si tu Free Bet es de $10.000 CLP, la ganancia máxima que puedes conseguir son $50.000 CLP, etc…</li>
+<li>Solo se acreditarán las ganancias obtenidas con dicha Free Bet. Las ganancias obtenidas serán enviadas a su saldo real.</li>
+<li>Si tu Free Bet caduca o tu apuesta con la Free Bet es saldada como nula/devuelta, se considerará como utilizada y no te acreditaremos una nueva</li>
+</ul>
+<ol>
+<li>Empates en la clasificación</li>
+</ol>
+<p>Si dos o más jugadores obtienen la misma cantidad de puntos:</p>
+<ul>
+<li>Los premios monetarios o free bets se dividen en partes iguales.</li>
+<li>En caso de premios materiales, gana el jugador que haya obtenido más puntos usando la función x2.</li>
+</ul>
+<ol>
+<li>Clasificación</li>
+</ol>
+<p>Los jugadores se ordenan en una tabla de clasificación según los puntos obtenidos.</p>
+<p>Los resultados finales de cada ronda se calculan dentro de las 24 horas posteriores al último partido y se basan en fuentes oficiales de resultados deportivos.</p>
+<ol>
+<li>Partidos postergados o cancelados</li>
+</ol>
+<p>Si un partido se posterga o cancela:</p>
+<ul>
+<li>No se asignarán puntos por ese partido.</li>
+<li>Los resultados de la ronda se calcularán con los partidos que sí se hayan jugado.</li>
+</ul>
+<p>Si todos los partidos de un torneo con pago de entrada se cancelan, las cuotas de entrada serán reembolsadas íntegramente.</p>
+<ol>
+<li>Disponibilidad del juego</li>
+</ol>
+<p>El juego estará disponible cuando sea habilitado por el organizador y puede estar sujeto a cambios o actualizaciones.</p>
+<ol>
+<li>Aceptación de las reglas</li>
+</ol>
+<p>Al participar en el juego Predictor, el jugador acepta estos Términos y Condiciones, así como las reglas específicas de cada torneo o promoción.</p>
+<p>Se aplicarán los términos y condiciones generales de Betsala.</p>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-9" role="dialog" aria-modal="true" aria-labelledby="modal-title-9">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(9)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-09.webp" alt="Cartilla Futbolera" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-9">Cartilla Futbolera</h2>
+    <div class="modal-content">
+<p>Demuestra cuánto sabes de fútbol con la Cartilla Futbolera de Betsala. Elige tus resultados, arma tus líneas y juega por pozos cada vez mayores.</p>
+<p><strong>¿Qué es?</strong></p>
+<p>La Cartilla Futbolera es un juego en el que los clientes deben predecir el resultado de una serie de eventos deportivos previamente definidos por Betsala.</p>
+<p>Cada participación consiste en una combinación de pronósticos (línea), donde el cliente selecciona uno o más resultados posibles por evento: 1 (gana el equipo local), X (empate) o 2 (gana el equipo visitante) . El cliente puede realizar múltiples combinaciones (líneas), lo que incrementa sus probabilidades de acierto y el importe total apostado. El monto de las apuestas son 300CLP, 600CLP y 1200CLP.</p>
+<p>Cuanto mayor es la cantidad apostada mayor será el pozo por el que se juega.</p>
+<p><strong>¿Cómo funciona?</strong></p>
+<ol>
+<li>Inicia sesión en tu cuenta Betsala.</li>
+<li>Accede a la sección La Cartilla Futbolera y participa en la jornada disponible.</li>
+<li>Realiza tus predicciones sobre los eventos deportivos seleccionados.</li>
+<li>Acierta el mayor número de resultados posibles para optar a una parte del pozo de premios.</li>
+</ol>
+<p><strong>Pozo de premios.</strong></p>
+<p>El pozo de premios se compone de un fondo determinado, alimentado por las participaciones de los usuarios, y podrá incrementarse en función del volumen total de participación. Los premios se distribuirán entre los participantes en función del número de aciertos obtenidos, considerando categorías de aciertos totales y hasta un máximo de tres errores permitidos. Cada categoría repartirá el premio entre los jugadores ganadores de forma proporcional a su participación. En caso de que ningún participante alcance el mínimo de aciertos requerido para una categoría, el pozo correspondiente podrá acumularse para la siguiente jornada de La Cartilla Futbolera.</p>
+<p><strong>Términos y Condiciones:</strong></p>
+<ol>
+<li>Esta promoción está disponible para usuarios de Betsala con cuentas en CLP.</li>
+<li>La Cartilla Futbolera es un juego en el que los clientes deben predecir el resultado de una serie de eventos deportivos previamente definidos por Betsala.</li>
+<li>Cada participación consiste en una combinación de pronósticos (línea), donde el cliente selecciona uno o más resultados posibles por evento: 1 (gana el equipo local), X (empate) o 2 (gana el equipo visitante).</li>
+<li>El cliente puede realizar múltiples combinaciones (líneas), lo que incrementa sus probabilidades de acierto y el importe total apostado.</li>
+<li>La apuesta mínima es de 300 CLP.</li>
+<li>Las apuestas deberán realizarse antes del inicio del primer evento incluido en la jornada. Las participaciones realizadas una vez iniciado el primer evento no serán válidas.</li>
+<li>El pozo de premios se compone de un fondo determinado, alimentado por las participaciones de los usuarios, y podrá incrementarse en función del volumen total de participación.</li>
+<li>Los premios se distribuirán entre los participantes en función del número de aciertos obtenidos, considerando categorías de aciertos totales y hasta un máximo de tres errores permitidos.</li>
+<li>Cada categoría repartirá el premio entre los jugadores ganadores de forma proporcional a su participación.</li>
+<li>En caso de que ningún participante alcance el mínimo de aciertos requerido para una categoría, el pozo correspondiente podrá acumularse para la siguiente jornada de Pool Master.</li>
+<li>Los resultados se determinarán según los resultados oficiales de los eventos deportivos incluidos en la jornada.</li>
+<li>En caso de que un evento sea cancelado o anulado, todas las selecciones de ese evento se considerarán ganadoras si solo uno es afectado; si más de un evento es anulado, la jornada podrá ser declarada nula y las apuestas reembolsadas; si un evento se retrasa más de 72 horas, la jornada podrá ser cancelada.</li>
+<li>En caso de errores en la configuración de los eventos, problemas técnicos o causas de fuerza mayor, Betsala se reserva el derecho de anular la jornada, reembolsar las apuestas y/o relanzar una nueva jornada.</li>
+<li>Betsala podrá aumentar el pozo de premios con fondos propios o participar en pools compartidos con otros operadores.</li>
+<li>Los premios se acreditarán en la cuenta del cliente una vez finalizados todos los eventos y validados los resultados.</li>
+<li>Solo se permitirá una cuenta por usuario. En caso de detectar cuentas múltiples o comportamiento fraudulento, Betsala se reserva el derecho de excluir al usuario y anular sus participaciones y premios.</li>
+<li>Esta promoción no es acumulable con otras promociones, salvo indicación expresa.</li>
+</ol>
+<p>Betsala se reserva el derecho de modificar o cancelar esta promoción en cualquier momento.</p>
+<ol>
+<li>La participación en la promoción implica la aceptación íntegra de estos términos y condiciones y de los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-11" role="dialog" aria-modal="true" aria-labelledby="modal-title-11">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(11)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-11.webp" alt="World Cup Drops Evolution" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-11">World Cup Drops Evolution</h2>
+    <div class="modal-content">
+<p>La Copa del Mundo también se vive en Casino Betsala, con una promoción que promete convertirse en un golazo. Se trata de World Cup Drops, que te permite ganar premios en DINERO REAL en más de veinte ruletas seleccionadas de Evolution, con un pozo a repartir de 500 millones de pesos. Solo debes jugar y de manera aleatoria podrás conseguir una recompensa equivalente al triple de tu última apuesta válida, que se acreditará directamente en tu cuenta. ¿Qué te parece? Dale la vuelta y busca los mejores premios con los World Cup Drops.</p>
+<p>Cómo funciona la promoción</p>
+<ol>
+<li>Inicia sesión en tu cuenta Betsala.</li>
+<li>Juega con dinero real en cualquiera de los juegos Evolution participantes durante el periodo promocional.</li>
+<li>Cada apuesta válida realizada podrá activar aleatoriamente un premio instantáneo (“Drop”).</li>
+<li>El valor del premio será equivalente a 3 veces el importe de tu última apuesta válida.</li>
+<li>Los premios serán acreditados directamente en tu cuenta de casino.</li>
+</ol>
+<p>Si tienes consultas, puedes contactarnos a través del Chat o en <a href="http://soporte@betsala.com/">soporte@betsala.com</a>, con el código promocional HRE0.</p>
+<p>Términos y condiciones</p>
+<ol>
+<li>Esta promoción estará disponible desde las 18:00h del 5 de junio de 2026 hasta las 17:59h del 19 de julio de 2026 (hora de Chile).</li>
+<li>Esta promoción corresponde a una campaña de red (“Network Promotion”) proporcionada por Evolution y disponibilizada por Betsala para sus usuarios. La mecánica promocional, premios y funcionamiento general dependen directamente de la configuración y tecnología del proveedor.</li>
+<li>La promoción está disponible exclusivamente para usuarios con cuentas y apuestas en CLP.</li>
+<li>La promoción solo será válida en modo de juego con dinero real.</li>
+<li>Los juegos participantes en esta promoción son:</li>
+</ol>
+<table class="bonus-table"><tbody>
+<tr><th>Ice Fishing</th><th>MONOPOLY Big Baller</th><th>Greek Lightning Roulette</th></tr>
+<tr><td>Crazy Time</td><td>Immersive Roulette</td><td>Hindi Lightning Roulette</td></tr>
+<tr><td>Crazy Balls</td><td>MONOPOLY Live</td><td>Italian Lightning Roulette</td></tr>
+<tr><td>Crazy Time A</td><td>Red Door Roulette</td><td>PD Lightning Roulette</td></tr>
+<tr><td>Lightning Storm</td><td>Lightning Roulette</td><td>Turkish Lightning Roulette</td></tr>
+<tr><td>Funky Time</td><td>Monopoly Roulette</td><td>XXXtreme Lightning Roulette</td></tr>
+<tr><td>Football Studio</td><td>World Cup Roulette</td><td>Ruleta Relámpago en Vivo</td></tr>
+<tr><td></td><td></td><td>Ruleta Puerta Roja En Vivo</td></tr>
+</tbody></table>
+<ol>
+<li>Variantes dedicadas de los juegos mencionados también podrán participar, dependiendo de disponibilidad.</li>
+<li>La disponibilidad de los juegos podrá variar según la configuración de Betsala y/o restricciones jurisdiccionales.</li>
+<li>Todas las apuestas válidas realizadas con dinero real, independientemente de su importe, tendrán posibilidad de activar un premio aleatorio (“Drop”).</li>
+<li>Las apuestas realizadas utilizando Giros Gratis, bonos u otros saldos promocionales podrán no ser consideradas válidas para esta promoción.</li>
+<li>Los premios (“Drops”) consisten en premios monetarios aleatorios acreditados en la moneda de la cuenta del cliente.</li>
+<li>El valor del premio será equivalente a 3 veces el importe de la última apuesta válida aceptada con dinero real.</li>
+<li>El pozo promocional total de la campaña equivale a €500.000 o su contravalor en monedas admitidas.</li>
+<li>Los usuarios podrán ganar un número ilimitado de premios durante el periodo promocional o hasta que el pozo promocional sea agotado.</li>
+<li>El importe máximo de un único premio estará limitado a €5.000 o su equivalente en CLP.</li>
+<li>Los premios podrán acreditarse instantáneamente o dentro de un plazo razonable tras la notificación del premio en el juego.</li>
+<li>Betsala realizará esfuerzos razonables para acreditar cualquier premio pendiente dentro de las 72 horas posteriores a la finalización de la campaña.</li>
+<li>Los premios dependen completamente del sistema RNG (Random Number Generator) y de la mecánica promocional configurada por Evolution.</li>
+<li>Betsala y/o Evolution podrán excluir de la promoción a usuarios previamente bloqueados o identificados por motivos de fraude, abuso o restricciones regulatorias.</li>
+<li>Betsala se reserva el derecho de no acreditar premios obtenidos como resultado de errores técnicos, humanos, fallos de sistema, pagos incorrectos o funcionamiento anómalo de los juegos.</li>
+<li>La participación está limitada a una única cuenta por usuario, dirección IP, dispositivo y/o método de pago.</li>
+<li>Evolution podrá modificar, reemplazar o eliminar juegos participantes durante la campaña.</li>
+<li>Betsala y/o Evolution se reservan el derecho de modificar, suspender o cancelar esta promoción en cualquier momento y sin previo aviso.</li>
+<li>Esta promoción podrá no ser acumulable con otras promociones activas, salvo indicación expresa.</li>
+<li>La participación en esta promoción implica la aceptación íntegra de estos términos y condiciones y de los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>HRE0</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-12" role="dialog" aria-modal="true" aria-labelledby="modal-title-12">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(12)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-12.webp" alt="9 Balls Network Drop" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-12">9 Balls Network Drop</h2>
+    <div class="modal-content">
+<p>El Mundial se vive en todos los rincones del planeta y por supuesto, también en tus tragamonedas favoritas. Por eso, VoltEnt trae una promo mundialera que no podrás rechazar: cada giro en la slot 9 Balls puede activar el pozo promocional de 1.042,5 MILLONES DE PESOS a repartir en premios en DINERO REAL.</p>
+<p>¿Cómo funciona la promoción?</p>
+<ol>
+<li>Inicia sesión en tu cuenta Betsala.</li>
+<li>Juega en la tragamonedas 9 Balls de VoltEnt durante el periodo promocional.</li>
+<li>Cada giro realizado con dinero real podrá activar de manera aleatoria uno de los premios disponibles del pozo promocional.</li>
+<li>Los premios serán acreditados directamente en tu cuenta de casino.</li>
+</ol>
+<p>Contáctanos a través del Chat o en <a href="mailto:soporte@betsala.com">soporte@betsala.com</a> con el código promocional <strong>RXM5 </strong>para todas tus consultas.</p>
+<p>Términos y Condiciones de la Promoción</p>
+<ol>
+<li>Esta promoción estará disponible desde las 18:00h del 3 de junio de 2026 hasta las 17:59h del 17 de junio de 2026 (hora de Chile).</li>
+<li>Esta promoción corresponde a una campaña de red (“Network Promotion”) proporcionada por VoltEnt y disponibilizada por Betsala para sus usuarios. La mecánica promocional, premios y funcionamiento general dependen directamente de la configuración y tecnología del proveedor.</li>
+<li>La promoción está disponible exclusivamente en modo de juego con dinero real.</li>
+<li>La tragamonedas participante en esta promoción es: 9 Balls (VoltEnt)</li>
+<li>Todos los giros realizados con dinero real en la tragamonedas participante durante el periodo promocional serán considerados válidos para participar.</li>
+<li>No existe importe mínimo de apuesta para participar en la promoción.</li>
+<li>Cada giro válido podrá activar como máximo un (1) premio aleatorio.</li>
+<li>Los premios serán otorgados de manera aleatoria durante el periodo promocional.</li>
+<li>Un mismo usuario podrá ganar múltiples premios durante la promoción.</li>
+<li>La cantidad de premios restantes podrá visualizarse y actualizarse en tiempo real dentro de la interfaz promocional, si estuviera disponible.</li>
+<li>Dependiendo de la configuración del sistema, los premios podrán acreditarse instantáneamente tras la notificación de premio o dentro de un plazo razonable posterior.</li>
+<li>El valor máximo total de premios de la promoción equivale a 1.000.000 EUR, distribuidos en un total de 6.250 premios aleatorios.</li>
+<li>Los premios disponibles corresponden a importes equivalentes aproximados a:</li>
+</ol>
+<ul class="sub-list">
+<li>160 euros</li>
+<li>50 euros</li>
+<li>10 euros</li>
+<li>5 euros</li>
+<li>2 euros</li>
+</ul>
+<ol>
+<li>Los importes de los premios serán convertidos y acreditados en CLP siguiendo el tipo de cambio siguiente: 1 EUR = $1.042,50 CLP.</li>
+<li>Los premios acreditados en efectivo no tendrán requisitos de apuesta (rollover).</li>
+<li>Si un premio es obtenido mientras el usuario utiliza saldo de bono, el importe podrá acreditarse como saldo de bono conforme a la configuración de la cuenta.</li>
+<li>Solo los usuarios correctamente verificados conforme a las políticas de Betsala podrán optar a recibir premios.</li>
+<li>Los premios están vinculados al sistema RNG (Random Number Generator) del juego, por lo que no existe garantía de que la totalidad de los premios disponibles sean activados durante el periodo promocional.</li>
+<li>Las apuestas realizadas utilizando Giros Gratis, bonos u otros saldos promocionales podrán no ser consideradas válidas para esta promoción, dependiendo de la configuración del proveedor.</li>
+<li>Betsala y VoltEnt se reservan el derecho de no acreditar premios obtenidos como resultado de errores técnicos, humanos, fallos de sistema, errores de cálculo, pagos incorrectos o cualquier funcionamiento anómalo del juego.</li>
+<li>Betsala podrá excluir a cualquier usuario y retirar premios en caso de detectar actividad fraudulenta, abusiva, colusoria o contraria al espíritu de la promoción.</li>
+<li>La participación está limitada a una única cuenta por usuario, dirección IP, dispositivo y/o método de pago.</li>
+<li>Esta promoción podrá no ser acumulable con otras promociones activas, salvo indicación expresa.</li>
+<li>Betsala se reserva el derecho de modificar, suspender o cancelar esta promoción en cualquier momento y sin previo aviso.</li>
+<li>En caso de discrepancia entre versiones traducidas de estos términos y condiciones, prevalecerá la versión original en inglés proporcionada por el proveedor.</li>
+<li>La participación en esta promoción implica la aceptación íntegra de estos términos y condiciones y de los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>RXM5</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-16" role="dialog" aria-modal="true" aria-labelledby="modal-title-16">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(16)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-16.webp" alt="Cashback Miércoles Slots" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-16">Cashback Miércoles Slots</h2>
+    <div class="modal-content">
+<p>Cada miércoles cubrimos el 10% de tus pérdidas netas en Tragamonedas hasta $100.000 CLP, ¡en saldo real! ¿Te lo vas a perder?</p>
+<p>¿En qué consiste la Oferta?</p>
+<ol>
+<li>Accede a tu cuenta Betsala.</li>
+<li>Juega en nuestras Tragamonedas con dinero real durante el miércoles.</li>
+<li>Si tu balance durante ese día es negativo, te reembolsamos el 10% de tus pérdidas hasta $100.000 el jueves.</li>
+</ol>
+<p>Contáctanos a través del Chat o en <a href="mailto:soporte@betsala.com">soporte@betsala.com</a> con el código promocional CAS10%CASH2024 si tienes cualquier duda.</p>
+<p>Términos y Condiciones de la Promoción</p>
+<ol>
+<li>Esta promoción está disponible todos los miércoles.</li>
+<li>El 10% de cashback o reembolso se calculará sobre la cantidad total de pérdida NETA con dinero real en Tragamonedas entre las 00:00h y las 23:59h del miércoles.</li>
+<li>La cantidad máxima de cashback que puedes recibir es de $100.000 CLP (pérdida neta de $1.000.000 o más), y la mínima de $1.000 (pérdida neta de $10.000).</li>
+<li>El cashback será añadido a tu saldo principal antes de las 09:00h. del jueves. El cashback deberá jugarse al menos una vez para ser retirable.</li>
+<li>Betsala se reserva el derecho de rechazar la promoción si se tienen sospechas de que se ha hecho un uso fraudulento del mismo.</li>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>CAS10%CASH2024</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-20" role="dialog" aria-modal="true" aria-labelledby="modal-title-20">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(20)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-20.webp" alt="Cashback Diario Live Casino" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-20">Cashback Diario Live Casino</h2>
+    <div class="modal-content">
+<p>Disfruta del Casino En Vivo de Betsala con nuestro exclusivo Cashback del 5%, ¡cada día! Si, leíste bien, todos los dias cubrimos el 5% de tus pérdidas netas en el Casino En Vivo hasta $50.000 CLP, ¡en saldo real!</p>
+<p>Pero eso no es todo. Además, tienes la opción de disponer de ese saldo cuando tu quieras o esperar a que te hagamos el reembolso cada 24h. ¡Tú decides!</p>
+<p>¿En qué consiste la Oferta?</p>
+<ol>
+<li>Juega en nuestro Casino En Vivo con dinero real.</li>
+<li>Si tu balance durante ese día es negativo, te reembolsamos el 5% de tus pérdidas hasta $50.000.</li>
+<li>Puedes consultar el cashback acumulado dentro de tu cuenta en la sección "Cashback" > "Cobrar Saldo Casino En Vivo". Si quieres, puedes cobrar ese monto en el momento que tu quieras o esperar a que te hagamos el pago en la hora establecida. ¡Tú eliges! Sólo recuerda que si lo cobras antes ya no acumularás más saldo durante ese día.</li>
+</ol>
+<p>Contáctanos a través del Chat o en <a href="mailto:soporte@betsala.com">soporte@betsala.com</a> con el código promocional CASHLIVE5% si tienes cualquier duda.</p>
+<p>Términos y Condiciones de la Promoción</p>
+<ol>
+<li>Esta promoción está disponible diariamente en el Casino En Vivo.</li>
+<li>El 5% de cashback o reembolso se calculará sobre la cantidad total de pérdida NETA con dinero real en Casino En Vivo entre las 03:00h y las 02:59h del día siguiente (24 horas).</li>
+<li>La cantidad máxima de cashback que puedes recibir es de $50.000 CLP al día (pérdida neta de $1.000.000 o más). Si pierdes más de $1.000.000, no recibirás más de $50.000 CLP.</li>
+<li>El cashback será añadido a tu saldo principal de forma automática cada día a las 05:00h. El cashback deberá jugarse al menos una vez para ser retirable.</li>
+<li>Puedes consultar el cashback acumulado dentro de tu cuenta en cualquier momento en la sección "Cashback" > "Cobrar Saldo Casino En Vivo" > "Ver Monto Disponible Para Retiro".</li>
+<li>Si no quieres esperar al cobro automático de las 5:00h, puedes cobrar el monto disponible en el momento que tu quieras pulsando en el botón "Cashback".</li>
+<li>Si optas por el cobro anticipado, ya no acumularás más saldo con tus pérdidas ese día y tampoco recibirás el pago automático de las 5:00h.</li>
+<li>Betsala se reserva el derecho de rechazar la promoción si se tienen sospechas de que se ha hecho un uso fraudulento del mismo.</li>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    <p class="promo-code-small">Código: <strong>CASHLIVE5%</strong></p>
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-22" role="dialog" aria-modal="true" aria-labelledby="modal-title-22">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(22)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-22.webp" alt="Betsala Club Anti-Racha" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-22">Betsala Club Anti-Racha</h2>
+    <div class="modal-content">
+<p>Desde el 13/11/23 te damos la bienvenida al Betsala Club, nuestra nueva promoción para recompensar a los jugadores de apuestas deportivas. Como ya sabes, no hay mejor forma de apostar que teniendo un seguro que cubra tus riesgos, y de eso trata nuestro Club. ¿No has acertado tus pronósticos? ¿Tu equipo favorito te ha fallado en el último partido? No te preocupes, cada lunes te acreditaremos una Free Bet para que compenses tu mala racha.</p>
+<p><strong>¿Cómo funciona la promoción?</strong></p>
+<ul>
+<li>Se premiará a los jugadores según la cantidad total de pérdida NETA en deportes durante la semana (Pérdida neta = Ganancias totales - Pérdidas totales en apuestas deportivas).</li>
+</ul>
+<ul>
+<li>Contarán las apuestas realizadas y resueltas del lunes a las 00:00 am al domingo a las 23:59 pm de la misma semana (7 días).</li>
+</ul>
+<ul>
+<li>Deberá realizar al menos 3 apuestas durante el periodo promocional y tener más de 2 días distintos de actividad.</li>
+</ul>
+<ul>
+<li>Cada usuario que presente pérdidas por el valor mínimo requerido será acreditado automáticamente con Free Bet el lunes.</li>
+</ul>
+<ul>
+<li>Solo se acreditará una Free Bet por usuario, persona o dirección de IP.</li>
+</ul>
+<p><strong>Términos y condiciones</strong><strong>:</strong></p>
+<ul>
+<li>El Betsala Club se acreditará cada lunes por la mañana (previo a las 12 del medio día) según la pérdida neta en apuestas deportivas.</li>
+</ul>
+<ul>
+<li>La pérdida neta del jugador se calculará entre las apuestas realizadas y resueltas del lunes a las 00:00 am al domingo a las 23:59 pm de la misma semana (7 días).</li>
+</ul>
+<ul>
+<li>La pérdida neta se calculará restando el monto de tus pérdidas al monto de tus ganancias. Ejemplo: durante la semana haces un total de $40.000 en apuestas y conseguiste unas ganancias de $20.000, tu pérdida neta son $20.000.</li>
+</ul>
+<ul>
+<li>Las apuestas con saldo real contarán tanto para el monto apostado como para el monto de las ganancias que generen. Las apuestas con Free Bet solo contarán para el monto de las ganancias que generen, y no para el de apuestas, ya que valor real de apuesta es cero.</li>
+</ul>
+<ul>
+<li>Solo serán tomadas en cuenta apuestas deportivas simples, apuestas combinadas (Parlays) tanto En Vivo como previo al inicio resueltas durante el periodo promocional (Últimos 7 días).</li>
+</ul>
+<ul>
+<li>Contarán para la promoción las apuestas que hayan sido cobradas mediante la función Cash Out, pero no contarán las que fueron Devueltas/Canceladas.</li>
+</ul>
+<ul>
+<li>El requisito de apuesta será declarado nulo si se observan casos de apuestas a todos los resultados posibles de un mismo encuentro.</li>
+</ul>
+<ul>
+<li>La cantidad de Free Bet que recibas dependerá del monto de tus pérdidas netas:</li>
+</ul>
+<ul>
+<li>Si pierdes entre $25.000 y $49.999, recibirás una Free Bet de $5.000.</li>
+</ul>
+<ul>
+<li>Si pierdes entre $50.000 y $99.999, tu Free Bet será de $10.000.</li>
+</ul>
+<ul>
+<li>Si pierdes $100.000 o más, recibirás una Free Bet de $25.000</li>
+</ul>
+<ul>
+<li>La Free Bet debe utilizarse de una vez en los siguientes 5 días de ser acreditada. Dicha Free Bet solo podrá ser utilizada en la sección deportes a una cuota mínima de 1.5. Cuota mínima por selección en combinadas 1.25.</li>
+</ul>
+<ul>
+<li>Solo se acreditarán las ganancias obtenidas con dicha apuesta gratis:</li>
+</ul>
+<ul>
+<li>Ganancia máxima Free Bet $5.000: 50.000 CLP / 50 dólares.</li>
+</ul>
+<ul>
+<li>Ganancia máxima Free Bet $10.000: 100.000 CLP / 100 dólares.</li>
+</ul>
+<ul>
+<li>Ganancia máxima Free Bet $25.000: 250.000 CLP / 250 dólares.</li>
+</ul>
+<ul>
+<li>Si tu Free Bet caduca o tu apuesta con la Free Bet es saldada como nula/devuelta, se considerará como utilizada y no te acreditaremos una nueva.</li>
+</ul>
+<ul>
+<li>Betsala se reserva el derecho de cambiar, cancelar, reclamar o rechazar cualquier promoción a su discreción en cualquier momento.</li>
+</ul>
+<ul>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ul>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-14" role="dialog" aria-modal="true" aria-labelledby="modal-title-14">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(14)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-14.webp" alt="Drops & Wins 2026-2027" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-14">Drops & Wins 2026-2027</h2>
+    <div class="modal-content">
+<p>Drops & Wins de Pragmatic Play del 4 de Marzo 2026 al 3 de Marzo 2027.</p>
+<p>De la mano de Pragmatic Play te presentamos Drops & Wins, una súper promoción con hasta 27.500.000.000 CLP en premios a repartir, con 100.000 premios semanales disponibles en Torneos Diarios y Wheel Drops Semanales.</p>
+<p>¿Cómo funciona la promoción?</p>
+<ol>
+<li>Accede a tu cuenta Betsala.</li>
+<li>Entra en cualquiera de las tragamonedas participantes con la promoción Drops & Wins.</li>
+<li>Realiza giros con dinero real en los juegos seleccionados.</li>
+</ol>
+<p>Participa automáticamente en:</p>
+<ul>
+<li>Wheel Drops Semanales: recolecta 3 piezas y gana premios instantáneos.</li>
+<li>Torneos Diarios: acumula puntos y sube en el ranking para ganar premios en efectivo.</li>
+</ul>
+<p>¿Suena bien, verdad? Participar es muy sencillo: accede a cualquiera de las Slots seleccionadas con el logo Drop&Wins, haz la apuesta mínima y juega por tu premio.</p>
+<p>Términos y Condiciones de la Promoción</p>
+<ol>
+<li>La promoción Drops & Wins 2026 estará disponible desde el 4 de marzo de 2026 a las 14:01h (hora de Chile) hasta el 3 de marzo de 2027 a las 13:59h (hora de Chile).</li>
+<li>La promoción solo está disponible para usuarios con cuenta en Betsala y con moneda CLP.</li>
+<li>La promoción aplica exclusivamente a tragamonedas seleccionadas de Pragmatic Play que incluyan el identificador Drops & Wins dentro del juego.</li>
+</ol>
+<p>Wheel Drops Semanales</p>
+<ol>
+<li>Cada semana (de miércoles a miércoles), los jugadores podrán participar en los Wheel Drops.</li>
+<li>El usuario deberá unirse a la promoción una (1) vez por semana desde el pop-up disponible en los juegos participantes.</li>
+<li>Cada giro con dinero real cuenta como una participación válida.</li>
+<li>Para ganar un premio, el jugador deberá recolectar tres (3) piezas de rueda, que se activan de forma aleatoria durante el juego.</li>
+<li>Una vez completadas las 3 piezas, el jugador podrá girar la rueda y recibir un premio.</li>
+<li>Cada usuario podrá ganar un máximo de dos (2) premios por semana.</li>
+<li>Tabla de premios – Wheel Drops</li>
+</ol>
+<ul>
+<li>1 premio de 100.000x</li>
+<li>3 premios de 10.000x</li>
+<li>6 premios de 5.000x</li>
+<li>10 premios de 1.000x</li>
+<li>30 premios de 500x</li>
+<li>50 premios de 100x</li>
+<li>300 premios de 50x</li>
+<li>7.500 premios de 10x</li>
+<li>69.000 premios de 5x</li>
+<li>5.000 premios de 20 Giros Gratis</li>
+<li>15.000 premios de 10 Giros Gratis</li>
+</ul>
+<p>Condiciones Wheel Drops</p>
+<ol>
+<li>El cálculo del premio tendrá un límite máximo de apuesta de $1.100 CLP. Si la apuesta es superior, el premio se calculará sobre dicho importe.</li>
+<li>Los Giros Gratis:</li>
+</ol>
+<ul>
+<li>Se acreditan en el mismo juego (o uno asignado)</li>
+<li>Son válidos durante 7 días</li>
+<li>Las ganancias se acreditan como dinero real sin requisitos de apuesta</li>
+</ul>
+<ol>
+<li>Las piezas no utilizadas se reinician cada semana</li>
+</ol>
+<p>Torneos Diarios</p>
+<ol>
+<li>Los Torneos Diarios estarán activos todos los días durante el período promocional.</li>
+<li>Para participar, el usuario deberá inscribirse una vez por semana desde el pop-up del juego.</li>
+<li>Para clasificar, el jugador deberá realizar al menos un (1) giro con dinero real con una apuesta mínima de $165 CLP (o el valor superior disponible en el juego).</li>
+<li>El puntaje se calculará como la suma de los multiplicadores de ganancia (ganancia/apuesta) superiores a 1.</li>
+<li>Los jugadores competirán en un ranking en tiempo real.</li>
+<li>Solo las primeras 5.000 apuestas calificadas por jugador contarán para el puntaje de cada torneo.</li>
+<li>Las ganancias provenientes de jackpots no serán consideradas para el puntaje.</li>
+<li>En caso de empate, ganará el jugador que haya alcanzado primero el puntaje.</li>
+<li>Tabla de premios – Torneos Diarios (CLP)</li>
+</ol>
+<ul>
+<li>Posición 1: $3.300.000 CLP</li>
+<li>Posición 2: $2.200.000 CLP</li>
+<li>Posiciones 3 – 4: $1.100.000 CLP</li>
+<li>Posiciones 5 – 10: $550.000 CLP</li>
+<li>Posiciones 11 – 20: $220.000 CLP</li>
+<li>Posiciones 21 – 40: $110.000 CLP</li>
+<li>Posiciones 41 – 80: $55.000 CLP</li>
+<li>Posiciones 81 – 160: $22.000 CLP</li>
+<li>Posiciones 161 – 300: $11.000 CLP</li>
+<li>Posiciones 301 – 500: $5.500 CLP</li>
+</ul>
+<p>Condiciones Torneos</p>
+<ul>
+<li>Los premios se acreditan en dinero real</li>
+<li>No tienen requisitos de apuesta</li>
+<li>No tienen restricciones de retiro</li>
+<li>Los premios podrán acreditarse en un plazo de hasta 72 horas</li>
+</ul>
+<p>Condiciones Generales</p>
+<ol>
+<li>No hay costo adicional para participar en la promoción.</li>
+<li>Esta es una promoción de red, por lo que los premios se distribuyen entre jugadores de distintos operadores.</li>
+<li>Las funciones como Compra de Bono (Bonus Buy), Super Spin o apuestas especiales pueden afectar el cálculo de premios o puntaje, según disponibilidad en la jurisdicción.</li>
+<li>Betsala y/o Pragmatic Play se reservan el derecho de modificar, suspender o cancelar la promoción en cualquier momento.</li>
+<li>Betsala se reserva el derecho de excluir a cualquier usuario en caso de detectar comportamiento fraudulento o abuso de la promoción.</li>
+<li>En caso de discrepancia entre versiones de los términos, prevalecerá la versión en inglés.</li>
+<li>Esta promoción no es acumulable con otras promociones, salvo que se indique lo contrario.</li>
+</ol>
+<p>Términos adicionales</p>
+<p>Se aplicarán los Términos y Condiciones Generales de Betsala.</p>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-15" role="dialog" aria-modal="true" aria-labelledby="modal-title-15">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(15)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-15.webp" alt="Aviator vs AV1 Semanal" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-15">Aviator vs AV1 Semanal</h2>
+    <div class="modal-content">
+<p><strong>Torneo Semanal Aviator vs AV1 - $350.000 a repartir en efectivo.</strong></p>
+<p>Betsala te presenta un apasionante torneo Aviator vs AV1, en el que podrás llevarte tu parte de los $350.000 pesos en efectivo que repartimos entre los 3 primeros clasificados, ¡cada semana!</p>
+<p>La apuesta mínima por tirada en cada juego es de $200 CLP, y cuánto mayor sea el multiplicador que obtengas en tu vuelo, ¡mejor será tu puesto en la clasificación!</p>
+<p>Compite en el torneo cada semana, ¡y llévate tu premio!</p>
+<p><strong>Términos y condiciones generales</strong></p>
+<ol>
+<li>El torneo Aviator vs AV1 estará activo cada semana de lunes a domingo durante las horas especificadas en nuestra sección torneos.</li>
+<li>Para participar en el torneo simplemente pulsa en "Unirse" para que tus jugadas en Aviator o AV1 comiencen a contar.</li>
+<li>Solo las tiradas de $200 CLP o más en Aviator o AV1 contarán para la promoción.</li>
+<li>Solo serán válidas las apuestas realizadas con saldo real, las apuestas de saldo bonificado no aplican.</li>
+<li>La tabla de clasificación de "Aviator vs AV1 Multiplicador" está basada en el multiplicador que obtienes en tus jugadas ganadoras. Cuánto mayor multiplicador obtengas, mejor será tu puesto en la clasificación.</li>
+<li>Los 3 primeros clasificados se reparten $350.000 pesos en efectivo de la siguiente forma:</li>
+</ol>
+<ul>
+<li>Posición 1: 200.000 CLP</li>
+<li>Posición 2: 100.000 CLP</li>
+<li>Posición 3: 50.000 CLP</li>
+</ul>
+<ol>
+<li>Puedes consultar la tabla de clasificación dentro de cada torneo (Sección Tragamonedas > Torneos).</li>
+<li>Al finalizar el torneo, los 3 primeros clasificados se repartirán el bote porcentualmente como se estipula anteriormente.</li>
+<li>Todos los usuarios que realicen al menos una apuesta con las condiciones establecidas entrarán en la clasificación.</li>
+<li>Este torneo está disponible para todos los usuarios de Betsala.</li>
+<li>Betsala se reserva el derecho de eliminar a un jugador del torneo si tuviera sospecha de alguna actividad irregular.</li>
+<li>Betsala se reserva el derecho de rechazar el bono si se tienen sospechas de que se ha hecho un uso fraudulento del mismo.</li>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-10" role="dialog" aria-modal="true" aria-labelledby="modal-title-10">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(10)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-10.webp" alt="Ruleta de la Fortuna" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-10">Ruleta de la Fortuna</h2>
+    <div class="modal-content">
+<p>¡Nuestra Ruleta de la Fortuna llega renovada y potenciada! Cada jugada en tragamonedas cuenta aún más para darle un Giro a tu suerte. ¡Ahora con mejores premios! Realiza apuestas por un valor mínimo de $25.000 y empieza a conseguir tiradas. ¡Hay 5 niveles y puedes participar cada día! Llévate Giros Gratis, Bonos y premios en efectivo.</p>
+<p><strong>Términos y condiciones de la Ruleta de la Fortuna</strong><strong>:</strong></p>
+<ol>
+<li>La Ruleta de la Fortuna está disponible diariamente para todos los usuarios de Betsala con cuenta/moneda en CLP.</li>
+<li>Consigue tiradas para los distintos niveles de la Ruleta de la Fortuna con tus apuestas en tragamonedas. Una vez consigas tu tirada, gira la Ruleta de la Fortuna y recibe tu premio.</li>
+<li>Las tiradas serán acreditadas una vez cumplidos los requisitos de apuestas en tragamonedas:</li>
+</ol>
+<ul>
+<li>Apuestas por valor de $25.000 - $99.999 CLP: consigues una tirada a la Ruleta de la Fortuna.</li>
+<li>Apuestas por valor de $100.000 - $249.999 CLP: consigues una tirada a la Ruleta Premium.</li>
+<li>Apuestas por valor de $250.000 - $499.999 CLP: consigues una tirada a la Ruleta Super Premium.</li>
+<li>Apuestas por valor de $500.000 - $999.999 CLP: consigues una tirada a la Ruleta VIP.</li>
+<li>Apuestas por valor de $1.000.000 CLP o más: consigues una tirada a la Ruleta Super VIP.</li>
+</ul>
+<ol>
+<li>Serán válidas las apuestas realizadas entre las 00:00 y las 23:59 (hora de Chile) del mismo día. Una vez finalizado el día, se restablecerán las barras de requisitos de apuesta y comenzará otro día promocional.</li>
+<li>Los requisitos de apuestas son acumulativos entre los distintos niveles, es decir, las apuestas que realizas suman en los 5 niveles. Ejemplo: si juegas $25.000 habrás llegado al primer nivel y solo te quedarán $75.000 más para llegar al segundo nivel. Una vez alcanzado el segundo nivel, te quedarán $150.000 para llegar al tercer nivel.</li>
+<li>Los premios otorgados por la ruleta te serán acreditados de forma inmediata. Si es un premio en efectivo aparecerá directamente en tu saldo principal, si son giros gratis o un bono deberás activarlos en el apartado "Bonos" dentro de tu cuenta para poder usarlos.</li>
+<li>Todas las tragamonedas son válidas para completar el requisito de apuesta para conseguir tu tirada a la Ruleta de la Fortuna.</li>
+<li>Las tiradas para girar la Ruleta de la Fortuna estarán disponibles durante 3 días desde su acreditación, y pueden ser utilizados por el usuario cuando crean necesario dentro de este periodo.</li>
+<li>Solo podrás conseguir 1 tirada por ruleta cada día (5 en total).</li>
+<li>Los premios otorgados por la Ruleta de la Fortuna estarán activos en tu cuenta durante las 24h. siguientes a su acreditación.</li>
+<li>Las apuestas realizadas a juegos de mesa, casino en vivo u otras modalidades de juego no contarán para el requisito de apuestas necesario para obtener las tiradas.</li>
+<li>Los premios otorgados por la ruleta no pueden ser intercambiados. El resultado de la ruleta indicará el premio correspondiente de forma aleatoria.</li>
+<li>Si Betsala tiene sospechas de que cualquier usuario está realizando un mal uso de esta promoción o que esta misma se está usando con múltiples cuentas de un mismo individuo, dirección IP o Dirección postal, retiraremos de forma inmediata las ganancias y/o los premios obtenidos con la Ruleta de la Fortuna.</li>
+<li>Le recordamos que los términos y condiciones generales de Betsala prevalecen ante cualquier promoción y se aplicarán si fuera necesario.</li>
+<li>Betsala se reserva el derecho de cambiar, cancelar o prohibir la participación de esta promoción durante el tiempo que esté vigente.</li>
+</ol>
+<p><strong>Términos y condiciones de los regalos de la Ruleta de la Fortuna:</strong></p>
+<ol>
+<li>Los premios en Cash/Efectivo se acreditarán automáticamente en tu saldo principal.</li>
+<li>Los Giros Gratis sólo están disponibles para usuarios con moneda/apuestas en CLP. Quedan excluidas las cuentas/apuestas en otra moneda.</li>
+<li>Para poder usar tus Giros Gratis, debes reclamarlos en la sección Bonos dentro de tu cuenta.</li>
+<li>Los Giros Gratis tienen un valor de 100 CLP por cada giro y caducan a las 24h.</li>
+<li>Los Giros Gratis podrán usarse en las tragamonedas seleccionadas de Pragmatic Play o PG Soft.</li>
+<li>Tragamonedas de Pragmatic Play seleccionadas:</li>
+</ol>
+<ul>
+<li>5 Lions Megaways</li>
+<li>Bee Keeper</li>
+<li>Big Bass Bonanza 1000</li>
+<li>El Huaso Suertudo</li>
+<li>Gates of Betsala</li>
+<li>Gates of Olympus 1000™</li>
+<li>Gates of Olympus Super Scatter</li>
+<li>Gold Party®</li>
+<li>John Hunter and the Tomb of the Scarab Queen</li>
+<li>Starlight Princess 1000™</li>
+<li>Sugar Rush 1000</li>
+<li>Sweet Bonanza 1000</li>
+<li>Sweet Bonanza Super Scatter</li>
+<li>Wisdom of Athena 1000</li>
+</ul>
+<ol>
+<li>Tragamonedas de PG Soft seleccionadas:</li>
+</ol>
+<ul>
+<li>Fortune Tiger</li>
+</ul>
+<ol>
+<li>Las ganancias obtenidas con los Giros Gratis no tendrán requisito de apuesta y entrarán directamente en tu saldo real.</li>
+<li>Si tus giros gratis caducan se considerarán como utilizados y no te acreditaremos unos nuevos.</li>
+<li>Los bonos estarán disponibles durante 24 horas luego de su acreditación. Los bonos podrán jugarse en los juegos seleccionados de Tragamonedas, Juegos de Mesa y Casino En Vivo.</li>
+<li>Los bonos deberán jugarse un total de 10 veces antes de poder convertirse en dinero real. El máximo de bono que puedes convertir en dinero real es:</li>
+<li>Bono de $1.000 CLP > Ganancia máxima de $10.000 CLP.</li>
+<li>Bono de $1.500 CLP > Ganancia máxima de $15.000 CLP.</li>
+<li>Bono de $2.000 CLP > Ganancia máxima de $20.000 CLP.</li>
+<li>Mientras los bonos estén activos, tus retiros estarán restringidos hasta que completes los requisitos de apuesta. Puedes cancelar tus bonos en cualquier momento.</li>
+<li>Las Tragamonedas cuentan en un 100% para el Requisito de apuesta de los bonos. Los juegos de mesa y Casino En Vivo de los proveedores seleccionados solo cuentan un 10% del total. Por lo que si juega en juegos de mesa cada apuesta contará para el 10% las 10 veces requeridas para desbloquear los fondos del bono.</li>
+<li>Los juegos de Tragamonedas válidos para completar el requisito de apuesta son los siguientes:</li>
+</ol>
+<ul>
+<li>Pragmatic Play: todos los juegos.</li>
+<li>Hacksaw: Le Bandit, Wanted Dead or a Wild, Duel at Dawn, Hand of Anubis, Le Pharaoh y Le King.</li>
+<li>Gamesglobal: Amazing Link Zeus y Aztec Triple Riches.</li>
+<li>NoLimit City: Mental 2, Deadwood R.I.P, Duck Hunters, Tanked y Blood and Shadow 2.</li>
+<li>PG Soft: Fortune Tiger, Fortune Rabbit y Fortune Dragon.</li>
+<li>VoltEnt: Hot slot 777 Hold the jackpot, Mighty Wild Jaguar, 15 Coins Grand Diamond Edition y Sizzling 777 Deluxe.</li>
+</ul>
+<ol>
+<li>Los juegos de Tragamonedas de estos proveedores contarán un 100% del total del requisito de apuesta. Ejemplo: Si recibes un bono de $2.000 pesos y lo juegas en Tragamonedas deberás jugar un total de $20.000 pesos para liberarlo ($2.000 x 10).</li>
+<li>Los proveedores de Juegos de Mesa o Casino En Vivo seleccionados son Evolution, Playtech y Spribe. Los Juegos de Mesa o Casino En Vivo de estos proveedores contarán sólo un 10% del requisito total de apuesta. Ejemplo: Si recibes un bono de $2.000 pesos y lo juegas en Juegos de Mesa o Casino En Vivo deberás jugar un total de $200.000 pesos ($2.000 x 10 x 10).</li>
+<li>Si tus bonos caducan se considerarán como utilizados y no te acreditaremos unos nuevos.</li>
+</ol>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-17" role="dialog" aria-modal="true" aria-labelledby="modal-title-17">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(17)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-17.webp" alt="MásCombi Deportes" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-17">MásCombi Deportes</h2>
+    <div class="modal-content">
+<p>¿Eres fan de las apuestas combinadas? ¡Pues ya está aquí MásCombi! Una promoción que te bonifica hasta un 100% tus apuestas combinadas ganadoras. ¡En saldo real!</p>
+<p>¿Cómo funciona la promoción?</p>
+<ol>
+<li>Realiza una apuesta combinada con saldo real de 3 o más selecciones.</li>
+<li>Cuota mínima por selección 1.40.</li>
+<li>La combinada debe ser de un monto de $500 CLP o más.</li>
+<li>Si tu apuesta combinada es ganadora, recibirás un bono extra en forma de saldo real hasta del 100%. La cantidad de bono se calcula respecto a las ganancias netas de la apuesta.</li>
+</ol>
+<p>Términos y Condiciones</p>
+<ol>
+<li>Esta promoción sólo está disponible para usuarios con moneda/apuestas en CLP. Quedan excluidas las cuentas/apuestas en otra moneda.</li>
+<li>Realiza una apuesta combinada con saldo real de 3 o más selecciones.</li>
+<li>Cuota mínima de cada selección 1.40.</li>
+<li>La combinada debe ser de un monto de $500 CLP o más.</li>
+<li>Si tu apuesta combinada es ganadora, recibirás un bono extra en forma de saldo real hasta del 100%. La cantidad de bono se calcula respecto a las ganancias netas de la apuesta.</li>
+<li>El bono en saldo real se acredita junto con las ganancias.</li>
+<li>Ejemplo: Si realizas una apuesta combinada de 10.000 CLP, de 5 selecciones, con cuota mínima por selección 1.40 y cuota total de 10.00, tu ganancia neta se incrementaría un 15%. Es decir, ganarías 100.000 CLP + 13.500 CLP en bono Más Combi en saldo real: Ganancia bruta (10.000 de apuesta x cuota 10.00 = 100.000 CLP) + bono Más Combi (100.000 CLP de ganancia bruta - 10.000 CLP de apuesta inicial = 90.000 CLP de ganancia neta x 15% = 13.500 CLP. El total que recibirías es de 113.500 CLP.</li>
+<li>La cantidad máxima de bono Más Combi que puedes recibir es de $1.000.000 CLP.</li>
+<li>Si no todas las selecciones de la apuesta cumplen los términos de la promoción (cuota 1.40 o superior), el bono se calculará en función del número de selecciones válidas de la apuesta. Por ejemplo, si una apuesta con 6 selecciones contiene 1 selección con cuota inferior a 1.40, el bono de esta apuesta será igual al bono de una apuesta de 5 selecciones. Si hay 3 selecciones en el boletín, una de las cuales tiene una cuota inferior a 1.40, dicha apuesta no será válida.</li>
+<li>Las selecciones devueltas/canceladas y/o anuladas no contarán para el cálculo del porcentaje de bono. El sistema ignorará esas selecciones y sólo hará el cálculo con las selecciones restantes.</li>
+</ol>
+<p>11 .Las apuestas Bet Builder, las realizadas con Aumentador de ganancias, las realizadas con alguna Combinada del día, las realizadas con dinero de bono, Free Bet o que hayan sido cobradas mediante la función Cash-out no contarán para la promoción.</p>
+<ol>
+<li>Si la cuota de cualquier selección es inferior a la cuota mínima de clasificación o se cancela, aplaza, anula o calcula con la cuota de 1, la apuesta se degradará en 1 selección. Por ejemplo: si se anula 1 selección de 13, la ganadora será degradada a la categoría de 12 selecciones.</li>
+<li>El porcentaje de bono Más Combi que recibas dependerá del número de selecciones de tu combinada como se especifica en la tabla superior:</li>
+</ol>
+<ul>
+<li>Combinada ganadora de 3 selecciones, recibirás un 6% de bono.</li>
+<li>Combinada ganadora de 4 selecciones, recibirás un 10% de bono.</li>
+<li>Combinada ganadora de 5 selecciones, recibirás un 15% de bono.</li>
+<li>Combinada ganadora de 6 selecciones, recibirás un 20% de bono.</li>
+<li>Combinada ganadora de 7 selecciones, recibirás un 25% de bono.</li>
+<li>Combinada ganadora de 8 selecciones, recibirás un 30% de bono.</li>
+<li>Combinada ganadora de 9 selecciones, recibirás un 35% de bono.</li>
+<li>Combinada ganadora de 10 selecciones, recibirás un 40% de bono.</li>
+<li>Combinada ganadora de 11 selecciones, recibirás un 45% de bono.</li>
+<li>Combinada ganadora de 12 selecciones, recibirás un 50% de bono.</li>
+<li>Combinada ganadora de 13 selecciones, recibirás un 55% de bono.</li>
+<li>Combinada ganadora de 14 selecciones, recibirás un 60% de bono.</li>
+<li>Combinada ganadora de 15 selecciones, recibirás un 65% de bono.</li>
+<li>Combinada ganadora de 16 selecciones, recibirás un 70% de bono.</li>
+<li>Combinada ganadora de 17 selecciones, recibirás un 75% de bono.</li>
+<li>Combinada ganadora de 18 selecciones, recibirás un 80% de bono.</li>
+<li>Combinada ganadora de 19 selecciones, recibirás un 90% de bono.</li>
+<li>Combinada ganadora de 20 o más selecciones, recibirás un 100% de bono.</li>
+</ul>
+<ol>
+<li>Betsala se reserva el derecho de cambiar, cancelar, reclamar o rechazar cualquier promoción a su discreción en cualquier momento.</li>
+<li>Betsala se reserva el derecho de rechazar el bono si se tienen sospechas de que se ha hecho un uso fraudulento del mismo.</li>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-18" role="dialog" aria-modal="true" aria-labelledby="modal-title-18">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(18)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-18.webp" alt="MásCombi Mejorado" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-18">MásCombi Mejorado</h2>
+    <div class="modal-content">
+<p>¿Eres fan de las apuestas combinadas? ¡Pues ya está aquí MásCombi! Una promoción que te bonifica hasta un 100% tus apuestas combinadas ganadoras. ¡En saldo real!</p>
+<p>¿Cómo funciona la promoción?</p>
+<ol>
+<li>Realiza una apuesta combinada con saldo real de 3 o más selecciones.</li>
+<li>Cuota mínima por selección 1.40.</li>
+<li>La combinada debe ser de un monto de $500 CLP o más.</li>
+<li>Si tu apuesta combinada es ganadora, recibirás un bono extra en forma de saldo real hasta del 100%. La cantidad de bono se calcula respecto a las ganancias netas de la apuesta.</li>
+</ol>
+<p>Términos y Condiciones</p>
+<ol>
+<li>Esta promoción sólo está disponible para usuarios con moneda/apuestas en CLP. Quedan excluidas las cuentas/apuestas en otra moneda.</li>
+<li>Realiza una apuesta combinada con saldo real de 3 o más selecciones.</li>
+<li>Cuota mínima de cada selección 1.40.</li>
+<li>La combinada debe ser de un monto de $500 CLP o más.</li>
+<li>Si tu apuesta combinada es ganadora, recibirás un bono extra en forma de saldo real hasta del 100%. La cantidad de bono se calcula respecto a las ganancias netas de la apuesta.</li>
+<li>El bono en saldo real se acredita junto con las ganancias.</li>
+<li>Ejemplo: Si realizas una apuesta combinada de 10.000 CLP, de 5 selecciones, con cuota mínima por selección 1.40 y cuota total de 10.00, tu ganancia neta se incrementaría un 15%. Es decir, ganarías 100.000 CLP + 13.500 CLP en bono Más Combi en saldo real: Ganancia bruta (10.000 de apuesta x cuota 10.00 = 100.000 CLP) + bono Más Combi (100.000 CLP de ganancia bruta - 10.000 CLP de apuesta inicial = 90.000 CLP de ganancia neta x 15% = 13.500 CLP. El total que recibirías es de 113.500 CLP.</li>
+<li>La cantidad máxima de bono Más Combi que puedes recibir es de $1.000.000 CLP.</li>
+<li>Si no todas las selecciones de la apuesta cumplen los términos de la promoción (cuota 1.40 o superior), el bono se calculará en función del número de selecciones válidas de la apuesta. Por ejemplo, si una apuesta con 6 selecciones contiene 1 selección con cuota inferior a 1.40, el bono de esta apuesta será igual al bono de una apuesta de 5 selecciones. Si hay 3 selecciones en el boletín, una de las cuales tiene una cuota inferior a 1.40, dicha apuesta no será válida.</li>
+<li>Las selecciones devueltas/canceladas y/o anuladas no contarán para el cálculo del porcentaje de bono. El sistema ignorará esas selecciones y sólo hará el cálculo con las selecciones restantes.</li>
+</ol>
+<p>11 .Las apuestas Bet Builder, las realizadas con Aumentador de ganancias, las realizadas con alguna Combinada del día, las realizadas con dinero de bono, Free Bet o que hayan sido cobradas mediante la función Cash-out no contarán para la promoción.</p>
+<ol>
+<li>Si la cuota de cualquier selección es inferior a la cuota mínima de clasificación o se cancela, aplaza, anula o calcula con la cuota de 1, la apuesta se degradará en 1 selección. Por ejemplo: si se anula 1 selección de 13, la ganadora será degradada a la categoría de 12 selecciones.</li>
+<li>El porcentaje de bono Más Combi que recibas dependerá del número de selecciones de tu combinada como se especifica en la tabla superior:</li>
+</ol>
+<ul>
+<li>Combinada ganadora de 3 selecciones, recibirás un 6% de bono.</li>
+<li>Combinada ganadora de 4 selecciones, recibirás un 10% de bono.</li>
+<li>Combinada ganadora de 5 selecciones, recibirás un 15% de bono.</li>
+<li>Combinada ganadora de 6 selecciones, recibirás un 20% de bono.</li>
+<li>Combinada ganadora de 7 selecciones, recibirás un 25% de bono.</li>
+<li>Combinada ganadora de 8 selecciones, recibirás un 30% de bono.</li>
+<li>Combinada ganadora de 9 selecciones, recibirás un 35% de bono.</li>
+<li>Combinada ganadora de 10 selecciones, recibirás un 40% de bono.</li>
+<li>Combinada ganadora de 11 selecciones, recibirás un 45% de bono.</li>
+<li>Combinada ganadora de 12 selecciones, recibirás un 50% de bono.</li>
+<li>Combinada ganadora de 13 selecciones, recibirás un 55% de bono.</li>
+<li>Combinada ganadora de 14 selecciones, recibirás un 60% de bono.</li>
+<li>Combinada ganadora de 15 selecciones, recibirás un 65% de bono.</li>
+<li>Combinada ganadora de 16 selecciones, recibirás un 70% de bono.</li>
+<li>Combinada ganadora de 17 selecciones, recibirás un 75% de bono.</li>
+<li>Combinada ganadora de 18 selecciones, recibirás un 80% de bono.</li>
+<li>Combinada ganadora de 19 selecciones, recibirás un 90% de bono.</li>
+<li>Combinada ganadora de 20 o más selecciones, recibirás un 100% de bono.</li>
+</ul>
+<ol>
+<li>Betsala se reserva el derecho de cambiar, cancelar, reclamar o rechazar cualquier promoción a su discreción en cualquier momento.</li>
+<li>Betsala se reserva el derecho de rechazar el bono si se tienen sospechas de que se ha hecho un uso fraudulento del mismo.</li>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-13" role="dialog" aria-modal="true" aria-labelledby="modal-title-13">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(13)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-13.webp" alt="Suplente al Rescate" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-13">Suplente al Rescate</h2>
+    <div class="modal-content">
+<p>¡Que entre el suplente y siga la jugada! Con <strong>Suplente al Rescate</strong>, tu apuesta no se queda en la banca: si tu jugador sale, el que entra toma su lugar y sigue jugando por ti. Más emoción, más oportunidades y el gol siempre puede llegar.</p>
+<p><strong>¿Cómo funciona?:</strong></p>
+<ol>
+<li>Realiza una apuesta en los mercados de goleador con funcionalidad “Suplente al Rescate”.</li>
+<li>Si el jugador que seleccionas es sustituido durante el partido, tu apuesta seguirá activa con el jugador que entre en su lugar.</li>
+<li>Si el suplente marca, tu apuesta podrá resultar ganadora según el mercado seleccionado.</li>
+</ol>
+<p><strong>Términos y Condiciones:</strong></p>
+<ol>
+<li>Esta funcionalidad está disponible en los mercados de goleador seleccionados identificados como “Suplente al Rescate”.</li>
+<li>La promoción aplica exclusivamente a apuestas realizadas en dichos mercados.</li>
+<li>Los mercados disponibles son:</li>
+</ol>
+<ul class="sub-list">
+<li>Anotará en cualquier momento (Suplente al Rescate)</li>
+<li>Primero en anotar (Suplente al Rescate)</li>
+<li>Último en anotar (Suplente al Rescate)</li>
+<li>Jugador que anotará 2 o más goles (Suplente al Rescate)</li>
+<li>Jugador que anotará 3 o más goles (Suplente al Rescate)</li>
+</ul>
+<ol>
+<li>En todos los casos, únicamente se tendrán en cuenta los goles anotados durante el tiempo reglamentario del partido. No se considerarán prórrogas ni tandas de penales.</li>
+<li>Los goles en propia puerta no se contabilizan para la resolución de las apuestas.</li>
+</ol>
+<p><strong>Condiciones generales de funcionamiento:</strong></p>
+<ol>
+<li>Si el jugador seleccionado es sustituido, la apuesta permanecerá activa y pasará automáticamente al suplente que entre en su lugar.</li>
+<li>Si el suplente también es reemplazado, la apuesta continuará activa para el siguiente jugador que ocupe esa posición.</li>
+<li>La apuesta seguirá la secuencia de sustituciones de esa posición hasta el final del tiempo reglamentario (90 minutos).</li>
+<li>Si el jugador seleccionado inicialmente no participa en el partido, la apuesta será considerada nula.</li>
+</ol>
+<p><strong>Condiciones por mercado:</strong></p>
+<ol>
+<li>Anotará en cualquier momento (Suplente al Rescate):</li>
+</ol>
+<ul class="sub-list">
+<li>La apuesta será ganadora si el jugador seleccionado o cualquiera de sus suplentes marca un gol en cualquier momento del tiempo reglamentario.</li>
+</ul>
+<ol>
+<li>Primero en anotar (Suplente al Rescate):</li>
+</ol>
+<ul class="sub-list">
+<li>La apuesta será ganadora si el jugador seleccionado o cualquiera de sus suplentes marca el primer gol del partido.</li>
+<li>Si ni el jugador seleccionado ni sus suplentes anotan el primer gol, la apuesta será perdedora.</li>
+</ul>
+<ol>
+<li>Último en anotar (Suplente al Rescate):</li>
+</ol>
+<ul class="sub-list">
+<li>La apuesta será ganadora si el jugador seleccionado o cualquiera de sus suplentes marca el último gol del partido.</li>
+<li>Si ni el jugador seleccionado ni sus suplentes anotan el último gol, la apuesta será perdedora.</li>
+</ul>
+<ol>
+<li>Jugador que anotará 2 o más goles (Suplente al Rescate):</li>
+</ol>
+<ul class="sub-list">
+<li>La apuesta será ganadora si la suma total de goles anotados por el jugador seleccionado y/o sus suplentes es igual o superior a 2.</li>
+<li>Si la suma total es 0 o 1, la apuesta será perdedora.</li>
+</ul>
+<ol>
+<li>Jugador que anotará 3 o más goles (Suplente al Rescate):</li>
+</ol>
+<ul class="sub-list">
+<li>La apuesta será ganadora si la suma total de goles anotados por el jugador seleccionado y/o sus suplentes es igual o superior a 3.</li>
+<li>Si la suma total es 2 o inferior, la apuesta será perdedora.</li>
+</ul>
+<p><strong>Condiciones adicionales:</strong></p>
+<ol>
+<li>Las apuestas se resolverán en base a los datos oficiales del proveedor de resultados.</li>
+<li>En caso de cualquier discrepancia, prevalecerán los datos oficiales del operador.</li>
+<li>Betsala se reserva el derecho de modificar, suspender o cancelar esta funcionalidad en cualquier momento.</li>
+<li>Betsala se reserva el derecho de anular apuestas en caso de detectar uso indebido, fraudulento o contrario al espíritu de la promoción.</li>
+<li>La participación implica la aceptación de estos términos y condiciones y de los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-19" role="dialog" aria-modal="true" aria-labelledby="modal-title-19">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(19)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-19.webp" alt="Ventaja de 2 Goles" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-19">Ventaja de 2 Goles</h2>
+    <div class="modal-content">
+<p>¡El pago anticipado llega a Betsala! ¿Tu equipo va ganando por 2 goles de diferencia? ¡Entonces tu apuesta es ganadora! Ya puedes disfrutar de esta nueva funcionalidad en los partidos de fútbol seleccionados.</p>
+<p>Busca el mercado Resultado del Partido (2 goles de ventaja) y haz tu apuesta. Si el equipo que seleccionaste como ganador tiene ventaja de 2 goles en cualquier momento durante el partido, tu apuesta será resuelta como ganadora sin tener que esperar a que termine, aún si el equipo contrario eventualmente anota algún gol o incluso gana el partido. ¡Así podrás disfrutar antes de tus ganancias!</p>
+<p>¿Qué más debes saber?</p>
+<ol>
+<li>2 goles de ventaja sólo está disponible en partidos de fútbol seleccionados.</li>
+<li>Para poder disfrutar de esta funcionalidad debes realizar tu apuesta en el mercado Resultado del Partido (2 goles de ventaja). No contarán las apuestas a otros mercados.</li>
+<li>Sólo contarán las apuestas a ganador del equipo local o visitante, no válido para las apuestas al empate.</li>
+<li>Sólo es válido para apuestas pre-partido (previo al inicio).</li>
+<li>Válido para apuestas simples y combinadas.</li>
+<li>Betsala se reserva el derecho de cambiar, cancelar, reclamar o rechazar cualquier promoción a su discreción en cualquier momento.</li>
+<li>Se aplicarán los términos y condiciones generales de Betsala.</li>
+</ol>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-21" role="dialog" aria-modal="true" aria-labelledby="modal-title-21">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(21)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-21.webp" alt="Potenciador de Ganancias 5%" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-21">Potenciador de Ganancias 5%</h2>
+    <div class="modal-content">
+<p>Cada día te puedes llevar un <strong>aumentador del 5%</strong> en cualquier apuesta deportiva. Al seleccionar la opción en tu boleto de apuestas aumentarás la ganancia neta de tu apuesta un 5%<strong>. ¡Todo con saldo real!</strong></p>
+<p>¿Cómo consigo mi Aumentador de Ganancias?</p>
+<ul>
+<li>Realiza un depósito de $10.000 o más en tu cuenta Betsala</li>
+</ul>
+<ul>
+<li>Al momento recibirás un Aumentador del 5% de tus Ganancias netas que podrás usar en cualquier apuesta deportiva.</li>
+</ul>
+<ul>
+<li>Selecciona la opción "Aumentador de Ganancias" en tu boleto de apuesta y aumentarás un 5% tu beneficio.</li>
+</ul>
+<p><strong>Términos y condiciones "Aumentador de Ganancias"</strong></p>
+<ul>
+<li>La oferta está ya disponible en tu cuenta cada 24h. De las 00:00 de cada día a las 23:59 hora de Chile.</li>
+</ul>
+<ul>
+<li>Si realizas un depósito durante el periodo diario de $10.000 en una sola transacción recibirás un aumentador del 5% automáticamente en tu cuenta.</li>
+</ul>
+<ul>
+<li>El Aumentador de Ganancias caduca a las 24h. de ser acreditado.Si tu Aumentador de Ganancias caduca o tu apuesta con el Aumentador es saldada como nula/devuelta, se considerará como utilizado y no te acreditaremos uno nuevo.</li>
+</ul>
+<ul>
+<li>El porcentaje de aumento se aplica a la ganancia neta de la apuesta que selecciones en tu boleto de apuesta.</li>
+</ul>
+<ul>
+<li>Solo se acreditará un Aumentador de ganancias por cliente y día natural.</li>
+</ul>
+<ul>
+<li>La oferta se aplica a todas las apuestas individuales y múltiples sin ninguna restricción en las cuotas o los mercados.</li>
+</ul>
+<ul>
+<li>La oferta está disponible para todos los jugadores de Betsala.</li>
+</ul>
+<ul>
+<li>Presione el interruptor y actívelo.</li>
+</ul>
+<ul>
+<li>La información del aumento de la ganancia aparecerá subrayada mostrando el porcentaje del aumento y el valor aumentado.</li>
+</ul>
+<ul>
+<li>La cantidad de bonificación generada como resultado del uso de la función Potenciador de Ganancias se acreditará como dinero real directamente en la cuenta del jugador.</li>
+</ul>
+<ul>
+<li>Solo las apuestas en efectivo contarán. Las apuestas realizadas con dinero de bonificaciones y apuestas gratuitas no serán válidas para la promoción.</li>
+</ul>
+<ul>
+<li>Betsala se reserva el derecho de modificar o cancelar esta oferta en cualquier momento sin previo aviso.</li>
+</ul>
+<ul>
+<li>Todos los jugadores que participan en esta promoción confirman que han leído y aceptado los Términos y Condiciones.</li>
+</ul>
+<ul>
+<li>Todos los Términos y Condiciones Generales se aplican a esta oferta.</li>
+</ul>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-23" role="dialog" aria-modal="true" aria-labelledby="modal-title-23">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(23)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-23.webp" alt="Bet Builder Combinado" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-23">Bet Builder Combinado</h2>
+    <div class="modal-content">
+<p>¡Atrévete a ser el estratega de tus propias apuestas con el <strong>Bet Builder de Betsala</strong>! Esta herramienta revolucionaria te da el poder de <strong>personalizar tus apuestas, combinando varios mercados en un solo pronóstico para maximizar tus posibilidades de victoria</strong>. Todo esto en los mejores eventos de <strong>fútbol, NBA, NHL y ¡mucho más!</strong></p>
+<p>Con el Bet Builder, tú eres el arquitecto de tus ganancias. ¿Te imaginas combinar el resultado del partido, el número de goles y quién marcará primero en una sola apuesta? Las cuotas se multiplican, y con ellas, ¡tus posibles ganancias también!</p>
+<p>Usarlo es muy fácil. <strong>Sólo debes ir al evento deportivo y verificar si la opción Bet Builder está disponible</strong>. Si es así, selecciónala y verás una lista de todos los mercados disponibles para que empieces a crear tu apuesta.</p>
+<p>No esperes más, ¡el momento de actuar es ahora! Crea tu cuenta en Betsala, aprovecha nuestro bono de bienvenida y empieza a disfrutar del emocionante mundo del Bet Builder. ¡No te quedes atrás, tus amigos ya están ganando con sus pronósticos personalizados! ¡Únete a la diversión y empieza a ganar hoy mismo!</p>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-24" role="dialog" aria-modal="true" aria-labelledby="modal-title-24">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(24)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-24.webp" alt="Retiro Express" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-24">Retiro Express</h2>
+    <div class="modal-content">
+<p>En Betsala entendemos la importancia de que tengas tu dinero lo más rápido posible. Por eso, hemos implementado la opción de <strong>Retiro Inmediato</strong>, con lo que tu dinero estará en tu cuenta bancaria en menos de cinco minutos los 7 días de la semana.</p>
+<ul>
+<li><strong>Rapidez sin precedentes:</strong> Olvídate de las largas esperas. Con nuestro Retiro Inmediato, tus ganancias estarán en tu cuenta bancaria en menos de 5 minutos.</li>
+</ul>
+<p><strong>- Disponibilidad total:</strong> Ya sea de día, de noche o durante el fin de semana, la opción de Retiro Inmediato está siempre disponible para ti.</p>
+<p><strong>- Fácil y conveniente:</strong> Con solo unos pocos clics, podrás retirar tus ganancias directamente a tu cuenta bancaria, sin complicaciones ni demoras.</p>
+<p><strong>- Seguro y Confiable:</strong> Tu seguridad es nuestra prioridad. Todos los retiros se realizan a través de procesos seguro, cuidando la protección de tus datos y transacciones.</p>
+<p>En Betsala, no solo te ofrecemos las mejores experiencias de apuestas deportivas y casino, sino que también nos aseguramos de que disfrutes de tus victorias en tiempo récord.</p>
+<p><strong>¡Prueba el Retiro Inmediato hoy y lleva tus ganancias al siguiente nivel!</strong></p>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+<div class="modal-overlay" id="modal-25" role="dialog" aria-modal="true" aria-labelledby="modal-title-25">
+<div class="modal-box">
+  <button class="modal-close" onclick="closeModal(25)" aria-label="Cerrar">✕</button>
+  <div class="modal-img"><img src="../images/bonuses/bonus-25.webp" alt="Alianza Sevilla FC" loading="lazy" width="1800" height="1000"></div>
+  <div class="modal-body">
+    <h2 id="modal-title-25">Alianza Sevilla FC</h2>
+    <div class="modal-content">
+<p>En <strong>Betsala</strong>, estamos orgullosos de nuestro acuerdo de patrocinio con el <strong>Sevilla FC</strong>, uno de los clubes más emblemáticos del fútbol europeo. Esta alianza marca un paso importante en nuestra estrategia de crecimiento y consolida el vínculo entre el club andaluz y la apasionada comunidad chilena.</p>
+<p>A través de este acuerdo, <strong>Betsala y Sevilla </strong>buscan impulsar la visibilidad de ambas marcas y acercando al equipo español a nuevos aficionados y demostrando la confiabilidad e importancia de Betsala como casa de apuesta y casino chilena.</p>
+<p>Desde <strong>Betsala</strong>, compartimos los valores que definen al Sevilla FC, por eso, esta colaboración representa mucho más que un acuerdo comercial: es una unión basada en la pasión por el fútbol, el esfuerzo constante y el respeto por la afición y nuestros jugadores.</p>
+<p>Estamos convencidos de que este patrocinio será el inicio de una etapa llena de oportunidades, experiencias y emociones que conectarán aún más a Chile con la historia y la grandeza del Sevilla FC.</p>
+    </div>
+    
+    <a class="btn btn-primary modal-cta" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Reclamar bono</a>
+  </div>
+</div>
+</div>
+
+
+<main>
+<div class="container breadcrumbs"><a href="../">Inicio</a><span> › </span><span>Promociones</span></div>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>BetSala <span class="accent">promociones</span> Chile</h1>
+      <p class="lead">Más de 25 ofertas activas en BetSala para usuarios de Chile: desde el pack de bienvenida y las misiones mundialistas hasta cashback diario, torneos semanales y el Bet Builder. Abre cada tarjeta para leer condiciones completas.</p>
+      <div class="hero-cta"><a class="btn btn-primary" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" data-nosnippet target="_blank">Ir a BetSala</a><a class="btn btn-ghost" href="../codigo-promocional/">Códigos promo</a></div>
+    </div>
+    <div class="hero-img"><img src="../images/welcome-bonus.webp" alt="BetSala promociones Chile" loading="eager" width="1200" height="675"></div>
+  </div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-head">
+<h2>Todas las <span class="accent">promociones</span> BetSala</h2>
+<p>Abre cualquier tarjeta para ver descripción completa, pasos para activarla y términos y condiciones</p>
+</div>
+<div class="promos-grid">
+<article class="bono-card" onclick="openModal(1)" role="button" tabindex="0" aria-label="Ver Free Bet Deportiva">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-01.webp" alt="Free Bet Deportiva BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Free Bet Deportiva</h3>
+<p>Apuesta $10.000 CLP en deportes con cuota mínima 1.80 y recibe $30.000 en apuesta gratis, sin necesidad de ganar.</p>
+<p class="promo-code-small">Código: <strong>OMW7</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(2)" role="button" tabindex="0" aria-label="Ver Pack Casino Bienvenida">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-02.webp" alt="Pack Casino Bienvenida BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Pack Casino Bienvenida</h3>
+<p>Tu primer depósito desde $5.000 CLP se multiplica por 1.5 hasta $300.000, más hasta 200 giros en slots de Pragmatic.</p>
+<p class="promo-code-small">Código: <strong>CASINO1DEP</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(5)" role="button" tabindex="0" aria-label="Ver Pasaporte Mundialista">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-05.webp" alt="Pasaporte Mundialista BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Pasaporte Mundialista</h3>
+<p>Una misión por día durante el Mundial. Completa 5, 10 o las 17 y gana Free Bets de $5.000, $10.000 y $20.000 CLP.</p>
+<p class="promo-code-small">Código: <strong>UNT2</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(6)" role="button" tabindex="0" aria-label="Ver Prize Drop Mundialero">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-06.webp" alt="Prize Drop Mundialero BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Prize Drop Mundialero</h3>
+<p>Gira Big Bass Football Bonanza desde $300 CLP y cada tirada puede activar aleatoriamente uno de los 100 premios de $22.500 CLP.</p>
+<p class="promo-code-small">Código: <strong>ZKM7</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(8)" role="button" tabindex="0" aria-label="Ver Torneo Multiplicadores">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-08.webp" alt="Torneo Multiplicadores BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Torneo Multiplicadores</h3>
+<p>El ranking suma tus mejores multiplicadores diarios desde $150 CLP. Los 20 mejores del clasificador semanal ganan efectivo.</p>
+<p class="promo-code-small">Código: <strong>VLC8</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(3)" role="button" tabindex="0" aria-label="Ver Segundo Depósito Casino">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-03.webp" alt="Segundo Depósito Casino BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Segundo Depósito Casino</h3>
+<p>Match del 100% hasta $200.000 CLP en tu segundo depósito, más hasta 100 giros gratis para las tragamonedas seleccionadas.</p>
+<p class="promo-code-small">Código: <strong>CASINODEP2</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(4)" role="button" tabindex="0" aria-label="Ver Lunes Gates of Olympus">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-04.webp" alt="Lunes Gates of Olympus BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Lunes Gates of Olympus</h3>
+<p>Juega $25.000 CLP en la familia Gates el lunes — ganes o pierdas — y el martes a las 9h aterrizan 25 giros en tu cuenta.</p>
+<p class="promo-code-small">Código: <strong>WAGGO2026</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(7)" role="button" tabindex="0" aria-label="Ver Predictor El Vidente">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-07.webp" alt="Predictor El Vidente BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Predictor El Vidente</h3>
+<p>Predice marcadores y goleadores del Mundial. Acumula puntos con el multiplicador x2 y compite por el pozo de Free Bets.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(9)" role="button" tabindex="0" aria-label="Ver Cartilla Futbolera">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-09.webp" alt="Cartilla Futbolera BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Cartilla Futbolera</h3>
+<p>Elige 1, X o 2 en cada partido desde $300 CLP por línea. Más aciertos significa mayor participación en el pozo de premios.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(11)" role="button" tabindex="0" aria-label="Ver World Cup Drops Evolution">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-11.webp" alt="World Cup Drops Evolution BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>World Cup Drops Evolution</h3>
+<p>Cada apuesta en más de 20 ruletas de Evolution puede activar un Drop equivalente a 3 veces tu última apuesta en dinero real.</p>
+<p class="promo-code-small">Código: <strong>HRE0</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(12)" role="button" tabindex="0" aria-label="Ver 9 Balls Network Drop">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-12.webp" alt="9 Balls Network Drop BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>9 Balls Network Drop</h3>
+<p>Entra a 9 Balls de VoltEnt y cada giro compite por uno de los 6.250 premios, desde 2 EUR hasta 160 EUR convertidos a CLP.</p>
+<p class="promo-code-small">Código: <strong>RXM5</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(16)" role="button" tabindex="0" aria-label="Ver Cashback Miércoles Slots">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-16.webp" alt="Cashback Miércoles Slots BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Cashback Miércoles Slots</h3>
+<p>El jueves antes de las 9h recibes el 10% de tu pérdida neta en slots del miércoles, desde $10.000 hasta $1.000.000 CLP.</p>
+<p class="promo-code-small">Código: <strong>CAS10%CASH2024</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(20)" role="button" tabindex="0" aria-label="Ver Cashback Diario Live Casino">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-20.webp" alt="Cashback Diario Live Casino BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Cashback Diario Live Casino</h3>
+<p>5% de tus pérdidas netas en Casino En Vivo se acumula durante 24h. Cobra cuando quieras o recibe el pago automático a las 5:00h.</p>
+<p class="promo-code-small">Código: <strong>CASHLIVE5%</strong></p>
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(22)" role="button" tabindex="0" aria-label="Ver Betsala Club Anti-Racha">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-22.webp" alt="Betsala Club Anti-Racha BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Betsala Club Anti-Racha</h3>
+<p>Pierde más de $25.000 CLP neto en deportes durante la semana y el lunes recibes Free Bet de $5.000, $10.000 o $25.000 CLP.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(14)" role="button" tabindex="0" aria-label="Ver Drops & Wins 2026-2027">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-14.webp" alt="Drops & Wins 2026-2027 BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Drops & Wins 2026-2027</h3>
+<p>Acumula 3 piezas girando slots Pragmatic para canjearlas por premios. Más torneos diarios con ranking en tiempo real.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(15)" role="button" tabindex="0" aria-label="Ver Aviator vs AV1 Semanal">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-15.webp" alt="Aviator vs AV1 Semanal BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Aviator vs AV1 Semanal</h3>
+<p>Pulsa Unirse en Aviator o AV1 y vuela desde $200 CLP. El ranking mide el mayor multiplicador; el top 3 reparte $350.000 CLP.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(10)" role="button" tabindex="0" aria-label="Ver Ruleta de la Fortuna">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-10.webp" alt="Ruleta de la Fortuna BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Ruleta de la Fortuna</h3>
+<p>Apuesta en slots, desbloquea niveles desde $25.000 CLP y gira la ruleta para ganar efectivo, giros o bonos cada día.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(17)" role="button" tabindex="0" aria-label="Ver MásCombi Deportes">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-17.webp" alt="MásCombi Deportes BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>MásCombi Deportes</h3>
+<p>Gana una combinada de 3+ selecciones con cuota mínima 1.40 y obtienes bono extra sobre la ganancia neta: del 6% al 100%.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(18)" role="button" tabindex="0" aria-label="Ver MásCombi Mejorado">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-18.webp" alt="MásCombi Mejorado BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>MásCombi Mejorado</h3>
+<p>Mismo escalado que MásCombi. El bono se acredita junto con las ganancias netas directamente en saldo real sin requisito extra.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(13)" role="button" tabindex="0" aria-label="Ver Suplente al Rescate">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-13.webp" alt="Suplente al Rescate BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Suplente al Rescate</h3>
+<p>Tu apuesta al goleador no muere si lo sustituyen: pasa al jugador que entra y sigue activa hasta el final del tiempo reglamentario.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(19)" role="button" tabindex="0" aria-label="Ver Ventaja de 2 Goles">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-19.webp" alt="Ventaja de 2 Goles BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Ventaja de 2 Goles</h3>
+<p>En el mercado especial de 2 goles: si tu equipo se pone 2 arriba en cualquier momento, tu apuesta se liquida como ganadora al instante.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(21)" role="button" tabindex="0" aria-label="Ver Potenciador de Ganancias 5%">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-21.webp" alt="Potenciador de Ganancias 5% BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Potenciador de Ganancias 5%</h3>
+<p>Deposita $10.000 CLP en una transacción y activa automáticamente un +5% sobre la ganancia neta de tu próxima apuesta deportiva.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(23)" role="button" tabindex="0" aria-label="Ver Bet Builder Combinado">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-23.webp" alt="Bet Builder Combinado BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Bet Builder Combinado</h3>
+<p>Activa Bet Builder en un partido y combina resultado, goleador, corners o tarjetas en un cupón. Las cuotas se multiplican en tiempo real.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(24)" role="button" tabindex="0" aria-label="Ver Retiro Express">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-24.webp" alt="Retiro Express BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Retiro Express</h3>
+<p>Tu ganancia llega a la cuenta bancaria en menos de 5 minutos, disponible 24 horas los 365 días del año sin esperas.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+<article class="bono-card" onclick="openModal(25)" role="button" tabindex="0" aria-label="Ver Alianza Sevilla FC">
+<div class="bono-card-img"><img src="../images/bonuses/bonus-25.webp" alt="Alianza Sevilla FC BetSala Chile" loading="lazy" width="1800" height="1000"></div>
+<div class="bono-card-body">
+<h3>Alianza Sevilla FC</h3>
+<p>BetSala es patrocinador oficial del Sevilla FC, acercando a los aficionados chilenos con uno de los clubes más laureados de Europa.</p>
+
+<span class="btn btn-primary card-btn">Ver detalles</span>
+</div>
+</article>
+
+</div>
 </div>
 </section>
-<section><div class="container prose-with-image"><div class="split">
-<div class="split-text"><h2>Promociones sin confusión</h2><p>BetSala promociones puede incluir ofertas de casino, giros gratis, free bets deportivas, cashback o campañas temporales. Cada una tiene una lógica distinta y no debería evaluarse solo por el número destacado.</p><p>La página fue reescrita para que el lector chileno encuentre una explicación ordenada. El objetivo SEO se cubre con una estructura clara de bonos, códigos, casino, deportes y condiciones.</p><a class="btn btn-primary" href="../casino/">Seguir leyendo</a></div>
-<div class="split-img"><img alt="BetSala Promociones imagen editorial" height="675" loading="lazy" src="../images/promo-code.webp" width="1200"/></div>
+
+<section class="faq"><div class="container"><div class="section-head"><h2>Preguntas <span class="accent">frecuentes</span></h2></div><div class="faq-list">
+<details class="faq-item" open><summary>¿Puedo combinar el bono de deportes y el de casino?</summary><p>No. El bono de bienvenida deportivo y el pack de casino 150% son incompatibles. Debes elegir uno de los dos antes de realizar tu primer depósito.</p></details>
+<details class="faq-item"><summary>¿Los giros del lunes de Gates se acreditan automáticamente?</summary><p>Sí. Juegas $25.000 CLP el lunes en cualquier slot de la saga Gates of Olympus y el martes a las 9:00h los 25 giros llegan a tu cuenta sin solicitarlo.</p></details>
+<details class="faq-item"><summary>¿Cuándo se paga el cashback del miércoles?</summary><p>El jueves antes de las 9h recibes el 10% de tu pérdida neta en tragamonedas del día anterior, mínimo $1.000 CLP y máximo $100.000 CLP.</p></details>
+<details class="faq-item"><summary>¿El Potenciador de Ganancias se aplica solo o hay que activarlo?</summary><p>Debes activarlo desde el boleto de apuesta. Deposita $10.000 CLP y aparecerá el interruptor del Aumentador del 5% disponible durante ese día natural.</p></details>
 </div></div></section>
-<section style="background:var(--bg-2)"><div class="container prose">
-<div class="section-head"><h2>Tipos de promociones BetSala</h2><p>Comparación para leer ofertas de manera más crítica.</p></div>
-<table><thead><tr><th>Aspecto</th><th>Qué revisar</th><th>Por qué importa</th></tr></thead><tbody><tr><td>Giros gratis</td><td>Rondas en tragamonedas específicas.</td><td>Pueden tener plazo y juego limitado.</td></tr><tr><td>Free bet</td><td>Apuesta deportiva promocional.</td><td>Suele exigir cuota mínima o evento válido.</td></tr><tr><td>Cashback</td><td>Devolución parcial bajo reglas.</td><td>No siempre aplica a todas las pérdidas.</td></tr><tr><td>Código</td><td>Cupón o activación manual.</td><td>Depende de vigencia y elegibilidad.</td></tr></tbody></table>
-</div></section>
-<section><div class="container"><div class="section-head"><h2>BetSala Promociones: puntos clave</h2><p>Bloques reordenados y redactados de nuevo para explicar la intención principal sin repetir el contenido de otras páginas.</p></div><div class="bonos-grid"><article class="bono-card"><span class="badge">PROMOS</span><h3>Casino</h3><p>Bonos o giros relacionados con slots y lobby de casino.</p><a class="btn btn-primary" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Revisar</a></article><article class="bono-card"><span class="badge">PROMOS</span><h3>Deportes</h3><p>Free bets, aumentadores o campañas sobre eventos.</p><a class="btn btn-primary" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Revisar</a></article><article class="bono-card"><span class="badge">PROMOS</span><h3>Código</h3><p>Cupones que pueden activar una oferta concreta.</p><a class="btn btn-primary" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Revisar</a></article><article class="bono-card"><span class="badge">PROMOS</span><h3>Condiciones</h3><p>Rollover, cuota mínima, fechas y límites de retiro.</p><a class="btn btn-primary" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Revisar</a></article></div></div></section>
-<section class="app"><div class="container app-grid">
-<div><h2>Checklist de promociones</h2><p style="color:var(--text-mute);font-size:16px">Antes de activar una campaña, revisa esto.</p><ul class="features"><li>Identifica si la promo es de casino o deporte.</li><li>Mira plazo de activación y fecha de vencimiento.</li><li>Comprueba requisitos de apuesta o rollover.</li><li>Evita depositar solo por una promoción que no entiendes.</li></ul><div class="app-cta"><a class="btn btn-primary" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Abrir BetSala</a><a class="btn btn-ghost" href="../soporte/">Soporte</a></div></div>
-<div class="app-img"><img alt="BetSala Promociones checklist" height="1200" loading="lazy" src="../images/slots-tragamonedas.webp" width="675"/></div>
-</div></section>
-<section><div class="container prose-with-image"><div class="split reverse">
-<div class="split-text"><h2>Promos como página central</h2><p>La URL de promociones funciona como hub para BetSala bonos, código promocional y bono de bienvenida. Así el usuario puede decidir qué tipo de oferta quiere revisar.</p><p>Las palabras clave se incorporan en títulos, tablas y enlaces internos, no solo en el primer párrafo.</p><a class="btn btn-primary" href="../promociones/">Ver rutas internas</a></div>
-<div class="split-img"><img alt="betsala promociones BetSala Chile" height="675" loading="lazy" src="../images/sports-betting.webp" width="1200"/></div>
-</div></div></section>
-<section class="productos"><div class="container"><div class="section-head"><h2>Rutas relacionadas</h2><p>Enlaces internos para continuar por la intención correcta sin mezclar bonos, juegos, cuenta y soporte.</p></div><div class="prod-grid"><a class="prod-card" href="../registro/"><div class="icon">📝</div><span class="title">Registro</span></a><a class="prod-card" href="../iniciar-sesion/"><div class="icon">🔐</div><span class="title">Iniciar sesión</span></a><a class="prod-card" href="../casino/"><div class="icon">🎰</div><span class="title">Casino online</span></a><a class="prod-card" href="../tragamonedas/"><div class="icon">🎲</div><span class="title">Tragamonedas</span></a><a class="prod-card" href="../casino-en-vivo/"><div class="icon">♠</div><span class="title">Casino en vivo</span></a><a class="prod-card" href="../apuestas-deportivas/"><div class="icon">⚽</div><span class="title">Apuestas deportivas</span></a><a class="prod-card" href="../soporte/"><div class="icon">💬</div><span class="title">Soporte</span></a><a class="prod-card" href="../confiable/"><div class="icon">✅</div><span class="title">Confiabilidad</span></a></div></div></section>
-<section class="faq"><div class="container"><div class="section-head"><h2>Preguntas frecuentes</h2></div><div class="faq-list"><details class="faq-item" open><summary>¿Las promociones cambian?</summary><p>Sí. Debes verificar siempre la información vigente en el sitio oficial.</p></details><details class="faq-item" ><summary>¿Qué oferta conviene más?</summary><p>Depende de condiciones, presupuesto y tipo de juego. No hay una respuesta universal.</p></details><details class="faq-item" ><summary>¿Los free bets son dinero retirable?</summary><p>Normalmente tienen reglas específicas. Revisa cómo se liquidan las ganancias.</p></details><details class="faq-item" ><summary>¿Qué pasa si una promo no aparece?</summary><p>Puede depender de elegibilidad, país, sesión o campaña vencida; soporte puede confirmarlo.</p></details></div></div></section>
 </main>
+
 <footer>
 <div class="container">
 <div class="foot-grid">
 <div>
-<div class="foot-logo"><img alt="BetSala" height="80" src="../assets/logo.webp" width="360"/></div>
+<div class="foot-logo"><img src="../assets/logo.webp" alt="BetSala" width="360" height="80"></div>
 <p style="font-size:14px">Guía editorial independiente para Chile sobre BetSala, app móvil, casino online, apuestas, bonos, registro, login y soporte.</p>
-<p class="foot-disclaimer">Contenido solo para mayores de 18 años. El juego implica riesgo económico. Revisa reglas, límites, requisitos de bonos y herramientas de juego responsable antes de apostar.</p>
+<p class="foot-disclaimer">Contenido solo para mayores de 18 años. El juego implica riesgo económico. Revisa reglas, límites y herramientas de juego responsable antes de apostar.</p>
 </div>
 <div><h2 class="foot-h">Juegos</h2><ul>
 <li><a href="../casino/">BetSala casino</a></li>
@@ -84,5 +2021,32 @@
 <div class="foot-bottom"><span>© 2026 · BetSala Chile guía editorial</span><span>18+ · juego responsable</span></div>
 </div>
 </footer>
+
+<script>
+function openModal(id) {
+  document.getElementById('modal-' + id).classList.add('active');
+  document.body.classList.add('modal-open');
+}
+function closeModal(id) {
+  document.getElementById('modal-' + id).classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+document.querySelectorAll('.modal-overlay').forEach(function(o) {
+  o.addEventListener('click', function(e) {
+    if (e.target === o) { o.classList.remove('active'); document.body.classList.remove('modal-open'); }
+  });
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.active').forEach(function(m) { m.classList.remove('active'); });
+    document.body.classList.remove('modal-open');
+  }
+});
+document.querySelectorAll('.bono-card[role="button"]').forEach(function(c) {
+  c.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.click(); }
+  });
+});
+</script>
 </body>
 </html>
